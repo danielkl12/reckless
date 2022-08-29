@@ -1,4 +1,5 @@
-// import React, {Page} from 'react';
+import React, {Page} from 'react';
+import ReactPlayer from "react-player"
 import { Component } from 'react';
 export default class Music extends Component {
     render() {
@@ -6,35 +7,49 @@ export default class Music extends Component {
         return(
             <section id="music">
                 <div className="row">
-                    <div className="four columns collapsed">
+                    <div className="columns">
+                    <div className="six columns main-col">
+                        <h2 style={{color: "white", fontSize:"50px", fontFamily:"squealer"}}>Music</h2>
+                        <div style={{color:"white", marginLeft:"50px", marginRight:"50px"}}> 
+                            
+                        </div>
+
                         
-                        <div id="portfolio-wrapper" className="grid">
+                    </div>
+                    </div>
+
+
+                    
+                <ReactPlayer
+        url="https://soundcloud.com/user-561841802"
+                                                    />
+                       
+
+                        <p>
                             {
-                                portfolioData.portfolio && portfolioData.portfolio.map((item) => {
-                                    return(
-                                        <div className="columns portfolio-item">
-                                            <div className="wrap">
-                                            <img src={`${item.imgurl}`} className="item-img" alt=""/>
-                                            <div className="overlay">
-                                                <div className="portfolio-item">
-                                                    <h4>{item.name}</h4>
-                                                    <p>{item.description}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                            
-                                                
-                                                
-                                    )
-                                })
+                                portfolioData.aboutMe
                             }
 
+                        </p>
+
+                        <div className="row">
+                            <div className="columns contact-details">
+                                
+                                    
+                                    
+                                    
+                              
+                            </div>
                         </div>
                     </div>
-                </div>
-
+                
             </section>
-        )
-    }
-}
+            
+
+
+
+ 
+    
+  )
+        }  }
+
