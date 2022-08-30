@@ -360,6 +360,13 @@ li a:hover {
   margin-top: 40px;
   }
 
+  #inputID::placeholder {
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 1;
+}
+
 
 
 /* .card:hover,
