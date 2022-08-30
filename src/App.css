@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: rgb(199, 18, 18);
+  
 }
 
 .App-logo {
@@ -15,7 +16,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-  body {
+  .App {
     
     flex-direction: column;
   }
