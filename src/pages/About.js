@@ -1,6 +1,5 @@
 import '../App.css';
 import React, { Component } from 'react';
-import weddingpdf from '../info-sheet.pdf';
 export default class About extends Component {
     
     
@@ -20,7 +19,7 @@ export default class About extends Component {
                         <h2 style={{color: "white", fontSize:"50px", fontFamily:"squealer"}}>About Reckless at Tiffany's</h2>
                         <div style={{color:"white", marginLeft:"50px", marginRight:"50px"}}> 
                             Reckless at Tiffany's is a cover band based out of Minneapolis, Minnesota. Started in 2015 at the University of 
-                            St. Thomas, Reckless at Tiffany's has gone on to play all around the Twin Cities metro area and beyond. Book your <a href={weddingpdf} target='_blank'>wedding or private event</a> today!
+                            St. Thomas, Reckless at Tiffany's has gone on to play all around the Twin Cities metro area and beyond. Book your wedding or private event today!
                         </div>
 
                         <p>

@@ -28,7 +28,7 @@ class App extends Component {
         {/* <MyButton/> */}
       <Navbar portfolioData = {portfolioData}/>
       <About portfolioData = {portfolioData}/>
-      {/* <Contact portfolioData = {portfolioData}/> */}
+      <Contact portfolioData = {portfolioData}/>
       <Photos portfolioData = {portfolioData}/>
       {/* <TitlebarGridList tileData = {tileData}/> */}
       <Music portfolioData = {portfolioData}/>

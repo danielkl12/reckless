@@ -199,7 +199,7 @@ li a:hover {
   }
 
   #dan {
-    height: 400px;
+    height: 350px;
     width: 300px;
     margin-bottom: 50px;
     border-radius: 25px;
@@ -208,7 +208,7 @@ li a:hover {
 
 
   #mike {
-    height: 400px;
+    height: 350px;
     width: 300px;
     margin-bottom: 50px;
     border-radius: 25px;
@@ -216,7 +216,7 @@ li a:hover {
   }
 
   #danny {
-    height: 400px;
+    height: 350px;
     width: 300px;
     margin-bottom: 50px;
     border-radius: 25px;
@@ -224,7 +224,7 @@ li a:hover {
   }
 
   #joe {
-    height: 400px;
+    height: 350px;
     width: 300px;
     margin-bottom: 50px;
     border-radius: 25px;
@@ -232,7 +232,7 @@ li a:hover {
   }
 
   #mikeg {
-    height: 400px;
+    height: 350px;
     width: 300px;
     margin-bottom: 50px;
     border-radius: 25px;
@@ -240,7 +240,7 @@ li a:hover {
   }
 
   #crowd {
-    height: 400px;
+    height: 350px;
     width: 300px;
     margin-bottom: 50px;
     border-radius: 25px;
@@ -300,6 +300,23 @@ li a:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/2H7A1242.jpg");
   min-height: 35em;
   filter: brightness(200%);
+  height: 50%;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#event {
+  display: flex;
+  flex-direction: column;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/IMG_1516.jpg");
+  min-height: 35em;
+  filter: brightness(150%);
   height: 50%;
   align-self: center;
   background-repeat: no-repeat;

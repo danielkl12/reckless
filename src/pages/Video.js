@@ -3,7 +3,7 @@ import { Component } from 'react';
 export default class Video extends Component {
     
     
-    //renders about page with profile picture, about me sections, etc
+    
     render() {
         
         return (
@@ -33,20 +33,7 @@ export default class Video extends Component {
                         <iframe id="reckless-video" width="540" height="295" style={{marginLeft:"5px"}} src="https://www.youtube.com/embed/S2V_DGyjzGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </article>
 
-                        {/* <article className="card">
-                            <img src={danny} alt="danny" id='danny' style={{marginLeft:"30px"}}/>
-                        </article>
-
-                        <article className="card">
-                            <img src={joe} alt="joe" id='joe' style={{marginLeft:"30px"}}/>
-                        </article>
-
-                        <article className="card">
-                            <img src={mikeg} alt="mikeg" id='mikeg' style={{marginLeft:"30px"}}/>
-                        </article>
-                        <article className="card">
-                            <img src={crowd} alt="crowds" id='crowd' style={{marginLeft:"30px"}}/>
-                        </article> */}
+                      
 
                 
                 
