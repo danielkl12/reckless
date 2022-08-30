@@ -47,7 +47,7 @@ export default class Navbar extends Component {
   <div className="center-content">
     <h1 id="logo-h1">Reckless at Tiffany's</h1>
     <h3>The Premier Minneapolis Cover band</h3>
-    <a href="#event" className="book-event" target="_blank">Book your event today!</a>
+    <a href="#event" className="book-event">Book your event today!</a>
   </div>
 </header>
 
