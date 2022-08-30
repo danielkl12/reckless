@@ -11,6 +11,8 @@ import portfolioData from './data';
 import Photos from './pages/Photos'
 import { Component } from 'react';
 
+
+
 import './App.css';
 // import ButtonAppBar from './pages/'
 // import TitlebarGridList from './pages/Cards'
@@ -20,6 +22,20 @@ import tileData from './tileData';
 
 
 class App extends Component {
+
+  state = {
+    innerWidth: window.innerWidth
+}
+
+componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this))
+    this.resize()
+}
+
+resize() {
+    this.setState({innerWidth: window.innerWidth})
+}
+
   render() {
   return (
     <div className="App">
