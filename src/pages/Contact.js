@@ -1,7 +1,7 @@
 import '../App.css';
 import React, { Component } from 'react';
-// import privateevent from '../privateevent.pdf';
-// import wedding from '../wedding.pdf';
+import privateevent from '../privateevent.pdf';
+import wedding from '../wedding.pdf';
 export default class About extends Component {
     
     
