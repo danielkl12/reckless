@@ -27,14 +27,10 @@ class App extends Component {
   render() {
   return (
     <div className="App">
-      {/* <ButtonAppBar /> */}
-        
-        {/* <MyButton/> */}
       <Navbar portfolioData = {portfolioData}/>
       <About portfolioData = {portfolioData}/>
       <Contact portfolioData = {portfolioData}/>
       <Photos portfolioData = {portfolioData}/>
-      {/* <TitlebarGridList tileData = {tileData}/> */}
       <Music portfolioData = {portfolioData}/>
       <Video portfolioData = {portfolioData}/>
       <Footer portfolioData = {portfolioData}/>
