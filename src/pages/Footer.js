@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FORM_ENDPOINT = "https://public.herotofu.com/v1/6c800840-27b4-11ed-9d54-c9f9d2b00e7b"; // TODO - fill on the later step
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/6c800840-27b4-11ed-9d54-c9f9d2b00e7b"; 
 
 const Footer = () => {
   const [submitted, setSubmitted] = useState(false);

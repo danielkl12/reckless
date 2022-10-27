@@ -9,7 +9,7 @@ import Footer from './pages/Footer';
 
 import portfolioData from './data';
 import Photos from './pages/Photos'
-import { Component } from 'react';
+import { Component, Tabs } from 'react';
 
 
 
@@ -23,21 +23,49 @@ import tileData from './tileData';
 
 class App extends Component {
 
-  state = {
-    innerWidth: window.innerWidth
-}
+  constructor() {
+    super();
+    this.state = {
+      width: window.innerWidth
+    };
+  }
 
-componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this))
-    this.resize()
-}
+  componentDidMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
 
-resize() {
-    this.setState({innerWidth: window.innerWidth})
-}
-
+  handleWindowSizeChange = () => {
+    this.setState({width: window. innerWidth});
+  };
+  
   render() {
+      const {width} = this.state;
+      const isMobile = width <= 500;
+
+  if(isMobile) {
+    return(
+    <Tabs>
+      {/* <ButtonAppBar /> */}
+        
+        {/* <MyButton/> */}
+        <Navbar portfolioData = {portfolioData}/>
+      <About portfolioData = {portfolioData}/>
+      <Contact portfolioData = {portfolioData}/>
+      <Photos portfolioData = {portfolioData}/>
+      {/* <TitlebarGridList tileData = {tileData}/> */}
+      <Music portfolioData = {portfolioData}/>
+      <Video portfolioData = {portfolioData}/>
+      <Footer portfolioData = {portfolioData}/>
+    </Tabs>
+
+        )
+
+    }else {
   return (
+    
+
+
+
     <div className="App">
       {/* <ButtonAppBar /> */}
         
@@ -54,6 +82,7 @@ resize() {
     </div>
   );
   }
+}
 }
 
 export default App;
