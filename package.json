@@ -1,6 +1,7 @@
 {
-
-  
+  "engines": {
+    "node": "12.x"
+  },
   "name": "reckless-react",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +17,6 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "^0.70.3",
     "react-player": "^2.10.1",
     "react-scripts": "5.0.1",
     "sails": "^1.5.3",
@@ -27,7 +27,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": [
