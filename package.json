@@ -3,6 +3,8 @@
     "npm": "8.19.2",
     "node": "18.12.0"
   },
+
+  
   "name": "reckless-react",
   "version": "0.1.0",
   "private": true,
@@ -25,10 +27,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "serve -s build",
+    "heroku-cleanup": "rm -rf node_modules src"
   },
   "eslintConfig": {
     "extends": [
