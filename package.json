@@ -1,4 +1,9 @@
 {
+
+  "engines": {
+    "npm": "8.19.2",
+    "node": "18.12.0"
+  },
   "name": "reckless-react",
   "version": "0.1.0",
   "private": true,
