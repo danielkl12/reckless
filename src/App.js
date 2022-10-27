@@ -16,7 +16,7 @@ import { Component } from 'react';
 import './App.css';
 // import ButtonAppBar from './pages/'
 // import TitlebarGridList from './pages/Cards'
-import tileData from './tileData';
+
 // import MyButton from './components/Footer'
 
 
