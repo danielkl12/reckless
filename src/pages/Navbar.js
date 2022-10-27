@@ -2,14 +2,13 @@ import React from 'react';
 import { Component } from 'react';
 import weddingpdf from '../info-sheet.pdf'
 import '../App.css';
-import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
 
 
-//import { Link, animateScroll as scroll } from react-scroll;
-//let Element = Scroll.Element;
+
+
 export default class Navbar extends Component {
     
    //renders navigation bar for all other files in components folder 
