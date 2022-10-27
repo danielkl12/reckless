@@ -9,7 +9,7 @@ import Footer from './pages/Footer';
 
 import portfolioData from './data';
 import Photos from './pages/Photos'
-import { Component, Tabs } from 'react';
+import { Component } from 'react';
 
 
 
@@ -23,49 +23,9 @@ import tileData from './tileData';
 
 class App extends Component {
 
-  constructor() {
-    super();
-    this.state = {
-      width: window.innerWidth
-    };
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.handleWindowSizeChange);
-  }
-
-  handleWindowSizeChange = () => {
-    this.setState({width: window. innerWidth});
-  };
   
   render() {
-      const {width} = this.state;
-      const isMobile = width <= 500;
-
-  if(isMobile) {
-    return(
-    <Tabs>
-      {/* <ButtonAppBar /> */}
-        
-        {/* <MyButton/> */}
-        <Navbar portfolioData = {portfolioData}/>
-      <About portfolioData = {portfolioData}/>
-      <Contact portfolioData = {portfolioData}/>
-      <Photos portfolioData = {portfolioData}/>
-      {/* <TitlebarGridList tileData = {tileData}/> */}
-      <Music portfolioData = {portfolioData}/>
-      <Video portfolioData = {portfolioData}/>
-      <Footer portfolioData = {portfolioData}/>
-    </Tabs>
-
-        )
-
-    }else {
   return (
-    
-
-
-
     <div className="App">
       {/* <ButtonAppBar /> */}
         
@@ -82,7 +42,6 @@ class App extends Component {
     </div>
   );
   }
-}
 }
 
 export default App;
