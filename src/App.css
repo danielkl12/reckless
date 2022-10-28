@@ -21,10 +21,7 @@
     font-weight: 300;
     font-family: squealer, !important;
     flex-direction: column;
-   border-left: 75px;
-   border-right: 75px;
-   margin-right:10px;
-   margin-left:10px;
+    width: auto;
   }
 }
 
