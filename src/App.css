@@ -81,21 +81,6 @@ li a:hover {
   background-color: #111;
 }
 
-.hero-image {
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2234006/pexels-photo-2234006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  min-height: 15em;
-  height: 50%;
-  align-self: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  align-items: center;
-  justify-content: center;
-
-}
-
 .hero-text {
   text-align: center;
   color: white;
@@ -181,6 +166,22 @@ li a:hover {
     display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/Reckless89.JPG");
+  min-height: 35em;
+  filter: brightness(200%);
+  height: 50%;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  }
+
+  #testimonials {
+    display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/IMG_8158.JPG");
   min-height: 35em;
   filter: brightness(200%);
   height: 50%;

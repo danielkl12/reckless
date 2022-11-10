@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Video from './pages/Video';
 import Music from './pages/Music';
 import Footer from './pages/Footer';
-
+import Testimonials from './pages/Testimonials';
 import portfolioData from './data';
 import Photos from './pages/Photos'
 import { Component } from 'react';
@@ -30,6 +30,7 @@ class App extends Component {
       <Navbar portfolioData = {portfolioData}/>
       <About portfolioData = {portfolioData}/>
       <Contact portfolioData = {portfolioData}/>
+      <Testimonials portfolioData = {portfolioData}/>
       <Photos portfolioData = {portfolioData}/>
       <Music portfolioData = {portfolioData}/>
       <Video portfolioData = {portfolioData}/>
