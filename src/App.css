@@ -2,6 +2,7 @@
   text-align: center;
   background-color: rgb(199, 18, 18);
   
+  
 }
 
 .App-logo {
@@ -21,7 +22,7 @@
     font-weight: 300;
     font-family: squealer, !important;
     flex-direction: column;
-    width: 80%;
+
   }
 }
 
@@ -173,6 +174,7 @@ li a:hover {
   background-attachment: fixed;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
   }
 
   #photos {
