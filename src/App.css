@@ -21,9 +21,9 @@
 
 @media only screen and (max-width: 1000px) {
   .App {
-    font-weight: 300;
-    font-family: squealer, !important;
-    flex-direction: column;
+   width: 100%;
+   max-width: 100%;
+
 
   }
 }
@@ -214,7 +214,7 @@ li a:hover {
 
   #nav {
     font-family: 'squealer';
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     justify-content: center;
     flex-direction: row;
