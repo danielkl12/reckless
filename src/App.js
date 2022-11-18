@@ -23,7 +23,15 @@ import './App.css';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { matches: window.matchMedia("(min-width: 768px)").matches };
+  }
 
+  componentDidMount() {
+    const handler = e => this.setState({matches: e.matches});
+    window.matchMedia("(min-width: 768px)").addEventListener('change', handler);
+  }
   
   render() {
   return (
