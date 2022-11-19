@@ -224,7 +224,7 @@ li a:hover {
     
   }
   
-  @media (max-width: 767px) {
+  @media (min-width: 767px) {
     .hidden-mobile {
       display: none;
     }
