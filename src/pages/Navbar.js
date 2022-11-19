@@ -19,7 +19,7 @@ export default class Navbar extends Component {
                 <header id="home" >
                     <nav id="nav-wrap" >
                         
-                        <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
+                        <ul id="nav" className="hidden-mobile" style= {{listStyle: 'none', }}>
                             
                             <li><a href="#about">About</a></li>
                             <li><a href="#footer">Contact</a></li>

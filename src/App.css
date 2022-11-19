@@ -223,6 +223,12 @@ li a:hover {
     width: 100%;
     
   }
+  
+  @media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+  }
 
   #dan {
     height: 350px;
