@@ -26,7 +26,6 @@ export default class Navbar extends Component {
                             <li><a href="#photos">Photos</a></li>
                             <li><a href="#music">Music</a></li>
                             <li><a href="#video">Video</a></li>
-                            {/* <li><a href="#music"></a>Music</li> */}
                             <li><a href="#event">Event Information</a></li>
                             
                             
