@@ -224,11 +224,11 @@ li a:hover {
     
   }
   
-  @media (min-width: 500px) {
+  /* @media (min-width: 500px) {
     .hidden-mobile {
       display: none;
     }
-  }
+  } */
 
   #dan {
     height: 350px;

@@ -16,8 +16,8 @@ export default class Navbar extends Component {
         let portfolioData = this.props.portfolioData;
         return (
             <React.Fragment>
-                <header id="home" className="hidden-mobile">
-                    <nav id="nav-wrap" >
+                <header id="home">
+                    <nav id="nav-wrap" className="hidden-mobile">
                         
                         <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
                             
