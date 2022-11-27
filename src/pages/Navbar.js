@@ -1,5 +1,6 @@
 import React from 'react';
-import { Component } from 'react';
+
+import { Component, setState } from 'react';
 // import weddingpdf from '../info-sheet.pdf'
 import '../App.css';
 
@@ -28,14 +29,18 @@ export default class Navbar extends Component {
         }
     
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 770});
+        this.setState({ isDesktop: window.innerWidth > 900,});
         }
+
+        // updateWindowDimensions() {
+        //     this.setState({ width: window.innerWidth, height: window.innerHeight });
+        //   }
     
     
     
    //renders navigation bar for all other files in components folder 
     render() {
-        const isDesktop = this.state.idDesktop;
+        const isDesktop = this.state.isDesktop;
        
 
         let portfolioData = this.props.portfolioData;
@@ -54,13 +59,15 @@ export default class Navbar extends Component {
             
                     {!this.state.matches && (<h3>Small Screen</h3>)}
             </div> */
-            <header id="home">
-                   <nav id="nav-wrap" className="hidden-mobile">
+            
+                   /* <nav id="nav-wrap" className="hidden-mobile"> */
                         
-                    <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
+                    /* <ul id="nav" className="nav" style= {{listStyle: 'none', }}> */
+        <header id="home">
                 {isDesktop ? (
                     
                         <div>
+                            <nav id="nav-wrap" className="hidden-mobile">
                             <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
                             <li><a href="#about">About</a></li>
                             <li><a href="#footer">Contact</a></li>
@@ -69,21 +76,17 @@ export default class Navbar extends Component {
                             <li><a href="#video">Video</a></li>
                             <li><a href="#event">Event Information</a></li>
                             </ul>
+                            </nav>
                         </div>
                 ) : (
                     <div>
-                        <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
-                             <li><a href="#about">About</a></li>
-                            <li><a href="#footer">Contact</a></li>
-                            <li><a href="#photos">Photos</a></li>
-                            <li><a href="#music">Music</a></li>
-                            <li><a href="#video">Video</a></li>
-                            <li><a href="#event">Event Information</a></li>
-                        </ul>
+                        
+                        
                     </div>
                 )}
-                </ul>
-                </nav>
+                {/* </ul> */}
+                {/* </nav> */}
+                
                 <div className="row banner">
                         <div className="banner-text">
                             
