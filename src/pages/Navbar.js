@@ -10,34 +10,81 @@ import '../App.css';
 
 
 export default class Navbar extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+        isDesktop: false
+    };
+    this.updatePredicate = this.updatePredicate.bind(this);
+    }
+
+    componentDidMount = () => {
+            this.updatePredicate();
+    window.addEventListener("resize", this.updatePredicate);
+        }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updatePredicate);
+        }
+    
+    updatePredicate() {
+        this.setState({ isDesktop: window.innerWidth > 770});
+        }
+    
+    
     
    //renders navigation bar for all other files in components folder 
     render() {
+        const isDesktop = this.state.idDesktop;
+       
+
         let portfolioData = this.props.portfolioData;
+        
         return (
-            <React.Fragment>
-                <header id="home">
-                    <nav id="nav-wrap" className="hidden-mobile">
+            // <React.Fragment>
+            //     <header id="home">
+            //         <nav id="nav-wrap" className="hidden-mobile">
                         
-                        <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
+            //             <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
+
+                
+            /* <div >
+                    {this.state.matches && (<h1>Big Screen</h1>)}
                             
+            
+                    {!this.state.matches && (<h3>Small Screen</h3>)}
+            </div> */
+            <header id="home">
+                   <nav id="nav-wrap" className="hidden-mobile">
+                        
+                    <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
+                {isDesktop ? (
+                    
+                        <div>
+                            <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
                             <li><a href="#about">About</a></li>
                             <li><a href="#footer">Contact</a></li>
                             <li><a href="#photos">Photos</a></li>
                             <li><a href="#music">Music</a></li>
                             <li><a href="#video">Video</a></li>
                             <li><a href="#event">Event Information</a></li>
-                            
-                            
-
-
-
-                        
-
+                            </ul>
+                        </div>
+                ) : (
+                    <div>
+                        <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
+                             <li><a href="#about">About</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                            <li><a href="#photos">Photos</a></li>
+                            <li><a href="#music">Music</a></li>
+                            <li><a href="#video">Video</a></li>
+                            <li><a href="#event">Event Information</a></li>
                         </ul>
-                    </nav>
-
-                    <div className="row banner">
+                    </div>
+                )}
+                </ul>
+                </nav>
+                <div className="row banner">
                         <div className="banner-text">
                             
                                 
@@ -69,10 +116,16 @@ export default class Navbar extends Component {
                     <p className="scrolldown">
                        
                     </p>
+                </header>
+                
+    
+        )}
+    };
+
+
+  
                     
 
-                </header>
-            </React.Fragment>
-        )
-    }
-}
+                
+            
+        
