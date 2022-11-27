@@ -1,10 +1,29 @@
 .App {
   text-align: center;
   background-color: rgb(199, 18, 18);
-  max-width: 100%;
+  width: 100%;
   height: auto;
   
   
+}
+
+.mobile {
+   
+    /* text-align: center;
+    background-color: rgb(199, 18, 18);
+    position: absolute;
+    margin:auto;
+    width: auto;
+    height: auto; */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(199, 18, 18);
+    overflow-x: hidden;
+    
+
 }
 
 .App-logo {
@@ -19,14 +38,14 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 1000px) {
   .App {
-   width: 100%;
-   max-width: 100%;
-
+    font-weight: 300;
+    font-family: squealer, !important;
+    flex-direction: column;
 
   }
-}
+} */
 
 /*FORM */
 
@@ -220,15 +239,8 @@ li a:hover {
     flex-direction: row;
     align-self: center;
     display: flex;
-    width: 100%;
     
   }
-  
-  /* @media (min-width: 500px) {
-    .hidden-mobile {
-      display: none;
-    }
-  } */
 
   #dan {
     height: 350px;

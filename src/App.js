@@ -91,7 +91,7 @@ updatePredicate() {
       <Footer portfolioData = {portfolioData}/>
       </div>
     ) : (
-      <div>
+      <div className="mobile">
       <Navbar portfolioData = {portfolioData}/>
       <About portfolioData = {portfolioData}/>
       <Contact portfolioData = {portfolioData}/>
