@@ -14,7 +14,7 @@ export default class Navbar extends Component {
     constructor(props) {
         super(props)
         this.state = {
-        isDesktop: false
+        // isDesktop: false
     };
     this.updatePredicate = this.updatePredicate.bind(this);
     }
@@ -29,7 +29,7 @@ export default class Navbar extends Component {
         }
     
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 600,});
+        this.setState({ width: window.innerWidth, height: window.innerHeight});
         }
 
         // updateWindowDimensions() {
