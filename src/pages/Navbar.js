@@ -14,7 +14,7 @@ export default class Navbar extends Component {
     constructor(props) {
         super(props)
         this.state = {
-        // isDesktop: false
+        isDesktop: false
     };
     this.updatePredicate = this.updatePredicate.bind(this);
     }
@@ -29,7 +29,7 @@ export default class Navbar extends Component {
         }
     
     updatePredicate() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight});
+        this.setState({ isDesktop: window.innerWidth > 600,});
         }
 
         // updateWindowDimensions() {
@@ -101,7 +101,7 @@ export default class Navbar extends Component {
                             
                                 
                                 {/* <div className="hero-header">Reckless at Tiffany's</div> */}
-                                <header className="hero">
+                                <header className="hero" style={{size:"20px"}}>
   <div className="center-content">
     <h1 id="logo-h1">Reckless at Tiffany's</h1>
     <h3>The Premier Minneapolis Cover band</h3>
