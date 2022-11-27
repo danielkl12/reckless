@@ -87,7 +87,7 @@ export default class Navbar extends Component {
                             <li style={{fontSize: "12px"}}><a href="#photos">Photos</a></li>
                             <li style={{fontSize: "12px"}}><a href="#music">Music</a></li>
                             <li style={{fontSize: "12px"}}><a href="#video">Video</a></li>
-                            <li style={{fontSize: "12px"}}><a href="#event">Event Info</a></li>
+                            <li style={{fontSize: "12px"}}><a href="#event">Events</a></li>
                             </ul>
                         </nav>
                         
