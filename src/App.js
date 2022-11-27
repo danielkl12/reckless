@@ -96,7 +96,6 @@ updatePredicate() {
       <About portfolioData = {portfolioData}/>
       <Contact portfolioData = {portfolioData}/>
       <Testimonials portfolioData = {portfolioData}/>
-      <Photos portfolioData = {portfolioData}/>
       <Music portfolioData = {portfolioData}/>
       <Video portfolioData = {portfolioData}/>
       <Footer portfolioData = {portfolioData}/>
