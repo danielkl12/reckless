@@ -82,12 +82,12 @@ export default class Navbar extends Component {
                     <div>
                         <nav id="nav-wrap" className="hidden-mobile">
                             <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
-                            <li style={{fontSize: "14px"}}><a href="#about">About</a></li>
-                            <li style={{fontSize: "14px"}}><a href="#footer">Contact</a></li>
+                            <li style={{fontSize: "16px"}}><a href="#about">About</a></li>
+                            <li style={{fontSize: "16px"}}><a href="#footer">Contact</a></li>
                             {/* <li style={{fontSize: "14px"}}><a href="#photos">Photos</a></li> */}
-                            <li style={{fontSize: "14px"}}><a href="#music">Music</a></li>
-                            <li style={{fontSize: "14px"}}><a href="#video">Video</a></li>
-                            <li style={{fontSize: "14px"}}><a href="#event">Events</a></li>
+                            <li style={{fontSize: "16px"}}><a href="#music">Music</a></li>
+                            <li style={{fontSize: "16px"}}><a href="#video">Video</a></li>
+                            <li style={{fontSize: "16px"}}><a href="#event">Events</a></li>
                             </ul>
                         </nav>
                         
