@@ -83,7 +83,7 @@ export default class Music extends Component {
 
 
                     
-                <ReactPlayer style={{opacity:"20px", width:"10px"}}
+                <ReactPlayer style={{opacity:"20px", width: "100%"}}
         url="https://soundcloud.com/user-561841802"
                                                     />
                        
