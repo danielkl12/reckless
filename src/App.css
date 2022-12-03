@@ -452,6 +452,7 @@ li a:hover {
     align-items: flex-end;
     justify-content: center;
     background-position: center center;
+    opacity: 80%;
   }
 
   .music-mobile {
