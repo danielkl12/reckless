@@ -68,6 +68,7 @@ export default class Music extends Component {
                         </div>
                     </div>
                 ) : (
+                    <div className="music-mobile">
                     
                     <div className="row">
                     <div className="columns">
@@ -104,6 +105,7 @@ export default class Music extends Component {
                               
                             </div>
                         </div>
+                    </div>
                     </div>
                 
                 
