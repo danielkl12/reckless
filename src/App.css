@@ -399,7 +399,7 @@ li a:hover {
   width: auto;
   align-self: center;
   background-repeat: no-repeat;
-  background-size:40px;
+  background-size:initial;
   background-attachment: fixed;
   align-items: center;
   justify-content: center;
