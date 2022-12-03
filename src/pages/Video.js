@@ -103,7 +103,7 @@ export default class Video extends Component {
                         
                         
                         <article className="card">
-                        <iframe id="reckless-video" width="380" height="195" style={{marginLeft:"5px", marginBottom:"10px"}} src="https://www.youtube.com/embed/S2V_DGyjzGM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe id="reckless-video" width="380" height="195" style={{marginLeft:"5px", marginBottom:"15px"}} src="https://www.youtube.com/embed/S2V_DGyjzGM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </article>
 
                       
