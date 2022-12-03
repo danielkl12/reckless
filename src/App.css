@@ -453,6 +453,7 @@ li a:hover {
     justify-content: center;
     background-position: center center;
     opacity: 80%;
+    margin-bottom: 10px;
   }
 
   .music-mobile {

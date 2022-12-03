@@ -20,6 +20,7 @@ const Footer = () => {
   }
 
   return (
+    
     <div id="footer">
 
 <div className="six columns main-col">
