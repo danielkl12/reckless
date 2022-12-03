@@ -423,11 +423,11 @@ li a:hover {
   overflow: scroll;
   align-self: center;
   background-repeat: no-repeat;
-  background-size:inherit;
+  background-size:cover;
   /* background-attachment: fixed; */
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   align-items: flex-end;
   justify-content: center;
   background-position: center center;
