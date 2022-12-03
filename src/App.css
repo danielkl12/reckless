@@ -393,13 +393,13 @@ li a:hover {
 .about-mobile {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/RAT\ 3_22\ Crem\ de\ la\ crem-043.jpg");
+  background-image: small linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/RAT\ 3_22\ Crem\ de\ la\ crem-043.jpg");
   min-height: 35em;
   height: auto;
   width: auto;
   align-self: center;
   background-repeat: no-repeat;
-  background-size:10px;
+  background-size:initial;
   background-attachment: fixed;
   align-items: center;
   justify-content: center;
@@ -407,6 +407,7 @@ li a:hover {
   align-items: flex-end;
   justify-content: center;
   background-position: center center;
+  
 
   }
 
