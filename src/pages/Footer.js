@@ -20,6 +20,7 @@ const Footer = () => {
   }
 
   return (
+    
     <div id="footer">
 
 <div className="six columns main-col">
@@ -36,7 +37,7 @@ const Footer = () => {
       target="_blank"
     >
       <div className="mb-3 pt-0" style={{height:"50px"}}> 
-        <input id="inputID" style={{width:"200px"}}
+        <input id="inputID" style={{width:"170px"}}
           type="text"
           placeholder="Your name"
           name="name"
@@ -45,7 +46,7 @@ const Footer = () => {
         />
       </div>
       <div className="mb-3 pt-0" style={{height:"50px"}}>
-        <input id="inputID"  style={{width:"200px"}}
+        <input id="inputID"  style={{width:"170px"}}
           type="email"
           placeholder="Email"
           name="email"
@@ -54,7 +55,7 @@ const Footer = () => {
         />
       </div>
       <div className="mb-3 pt-0">
-        <textarea id="inputID"  style={{width:"400px", height:"200px"}}
+        <textarea id="inputID"  style={{width:"370px", height:"200px"}}
           placeholder="Your message"
           name="message"
           className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"

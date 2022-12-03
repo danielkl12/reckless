@@ -161,14 +161,6 @@ li a:hover {
     color: white;
   }
 
-  /* @font-face {
-    font-family: '';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Squealer'), local('Squealer'), url(https://fonts.cdnfonts.com/css/squealer) ;
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    } */
-
   #logo-h1 {
     font-family: 'squealer';
     font-size: 80px;
@@ -308,20 +300,6 @@ li a:hover {
    
 }
 
-/* #reckless-video {
-  justify-content:space-around;
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  align-items: center;
- 
-  
-    
-} */
-
 #video {
   display: flex;
   flex-direction: column;
@@ -357,7 +335,6 @@ li a:hover {
 #event {
   display: flex;
   flex-direction: column;
-  
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/IMG_1516.jpg");
   min-height: 35em;
   filter: brightness(150%);
@@ -373,7 +350,7 @@ li a:hover {
 
 #footer{
   
-    display: flex;
+  display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/RAT\ 3_22\ Crem\ de\ la\ crem-038.jpg");
   min-height: 35em;
@@ -389,7 +366,7 @@ li a:hover {
   }
 
   #contact {
-    display: flex;
+  display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/RAT\ 3_22\ Crem\ de\ la\ crem-038.jpg");
   min-height: 35em;
@@ -411,8 +388,120 @@ li a:hover {
     opacity: 1;
 }
 
+/****mobile classes***/
+
+.about-mobile {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/RAT\ 3_22\ Crem\ de\ la\ crem-043.jpg");
+  min-height: 35em;
+  height: auto;
+  width: auto;
+  resize: both;
+  overflow: scroll;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size:inherit;
+  /* background-attachment: fixed; */
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: flex-end;
+  justify-content: center;
+  background-position: center center;
+
+  }
+
+  .event-mobile {
+    display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/IMG_1516.jpg");
+  min-height: 35em;
+  height: auto;
+  width: auto;
+  resize: both;
+  overflow: scroll;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* background-attachment: fixed; */
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 40px; */
+  align-items: flex-end;
+  justify-content: center;
+  background-position: center center;
+  }
+
+  .testimonials-mobile {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/IMG_8158.JPG");
+    min-height: 35em;
+    height: auto;
+    width: auto;
+    resize: both;
+    overflow: scroll;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 40px; */
+    align-items: flex-end;
+    justify-content: center;
+    background-position: center center;
+    opacity: 80%;
+    margin-bottom: 20px;
+  }
+
+  .music-mobile {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/2H7A1242.jpg");
+    min-height: 35em;
+    height: auto;
+    width: auto;
+    resize: both;
+    overflow: scroll;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 40px; */
+    align-items: flex-end;
+    justify-content: center;
+    background-position: center center;
+
+  }
+
+  .video-mobile {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/ogaras.jpg");
+    min-height: 35em;
+    height: auto;
+    width: auto;
+    resize: both;
+    overflow: scroll;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 40px; */
+    align-items: flex-end;
+    justify-content: center;
+    background-position: center center;
+  }
 
 
+
+/**css graveyard**/
 /* .card:hover,
 .card:hover .card {
     box-shadow: inset 0px 0px 8px red, 0 0 15px red;
@@ -420,6 +509,28 @@ li a:hover {
     opacity: 1.0;
     
   } */
+
+  /* #reckless-video {
+  justify-content:space-around;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+ 
+  
+    
+} */
+
+/* @font-face {
+    font-family: '';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Squealer'), local('Squealer'), url(https://fonts.cdnfonts.com/css/squealer) ;
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    } */
   
   
   
