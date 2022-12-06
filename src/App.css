@@ -335,7 +335,7 @@ li a:hover {
 #event {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/public/images/IMG_1516.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/public/images/IMG_1516.jpg");
   min-height: 35em;
   filter: brightness(150%);
   height: 50%;
@@ -415,7 +415,7 @@ li a:hover {
   .event-mobile {
     display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/IMG_1516.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/public/images/IMG_1516.jpg");
   min-height: 35em;
   height: auto;
   width: auto;
