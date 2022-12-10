@@ -461,6 +461,7 @@ li a:hover {
     flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/2H7A1242.jpg");
     min-height: 35em;
+    size: 100%;
     height: auto;
     width: auto;
     resize: both;
@@ -515,6 +516,8 @@ li a:hover {
     top: 0;
     left: 0;
   } 
+
+  
 
 
 /**css graveyard**/
