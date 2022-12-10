@@ -20,7 +20,7 @@ export default class Video extends Component {
         }
     
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 600,});
+        this.setState({ isDesktop: window.innerWidth > 1200,});
         }
     
     render() {
