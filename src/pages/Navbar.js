@@ -80,7 +80,7 @@ export default class Navbar extends Component {
                         </div>
                 ) : (
                     <div>
-                        <nav id="nav-wrap" className="hidden-mobile">
+                        <nav id="nav-wrap" className="navbar-mobile">
                             <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
                             <li style={{fontSize: "16px"}}><a href="#about">About</a></li>
                             <li style={{fontSize: "16px"}}><a href="#footer">Contact</a></li>

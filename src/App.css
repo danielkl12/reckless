@@ -499,6 +499,10 @@ li a:hover {
     background-position: center center;
   }
 
+  .navbar-mobile {
+    height: initial;
+  }
+
 
 
 /**css graveyard**/
