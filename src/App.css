@@ -504,9 +504,9 @@ li a:hover {
     height: 60px;
   }
 
-  .player-wrapper {
+  /* .player-wrapper {
     position: relative;
-    padding-top: 56.25%;
+    
 
   }
 
@@ -514,7 +514,7 @@ li a:hover {
     position: absolute;
     top: 0;
     left: 0;
-  }
+  } */
 
 
 /**css graveyard**/
