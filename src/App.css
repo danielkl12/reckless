@@ -459,7 +459,7 @@ li a:hover {
   .music-mobile {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/2H7A1242.jpg");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/2H7A1242.jpg"); */
     min-height: 35em;
     size: auto;
     height: auto;
@@ -469,10 +469,10 @@ li a:hover {
     align-self: center;
     background-repeat: no-repeat;
     background-size:cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     align-items: center;
     justify-content: center;
-     margin-top: 40px;
+     /* margin-top: 40px; */
      align-items: flex-end;
     justify-content: center;
     background-position: center center; 
@@ -505,17 +505,23 @@ li a:hover {
     height: 60px;
   }
 
-   .player-wrapper {
+   /* .player-wrapper {
     position: relative;
     
 
-  }
+  } */
 
   .react-player {
-    position: absolute;
+    position:inherit;
     top: 0;
     left: 0;
-  } 
+    size: 100%;
+
+  }
+
+  .soundcloud-container {
+    width: auto;
+  }
 
   
 

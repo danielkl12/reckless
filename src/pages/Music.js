@@ -70,7 +70,7 @@ export default class Music extends Component {
                 ) : (
                     <div className="music-mobile">
                     
-                    <div className="row">
+                    <div className="soundcloud-container">
                     <div className="columns">
                     <div className="six columns main-col">
                         <h2 style={{color: "white", fontSize:"50px", fontFamily:"squealer"}}>Music</h2>
@@ -91,12 +91,7 @@ export default class Music extends Component {
                                                     />
                        
 
-                        <p>
-                            {
-                                portfolioData.aboutMe
-                            }
-
-                        </p>
+                        
 
                         <div className="row">
                             <div className="columns contact-details">
