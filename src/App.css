@@ -469,7 +469,7 @@ li a:hover {
     align-self: center;
     background-repeat: no-repeat;
     background-size:cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     align-items: center;
     justify-content: center;
      /* margin-top: 40px; */
@@ -505,12 +505,7 @@ li a:hover {
     height: 60px;
   }
 
-   /* .player-wrapper {
-    position: relative;
-    
-
-  } */
-
+  
   .react-player {
     position:inherit;
     top: 0;
@@ -558,5 +553,10 @@ li a:hover {
     } */
   
   
-  
+   /* .player-wrapper {
+    position: relative;
+    
+
+  } */
+
  
