@@ -458,24 +458,23 @@ li a:hover {
 
   .music-mobile {
     display: flex;
-    flex-direction: column;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/2H7A1242.jpg"); */
-    min-height: 35em;
-    size: auto;
-    height: auto;
-    width: auto;
-    resize: both;
-    overflow: scroll;
-    align-self: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    /* background-attachment: fixed; */
-    align-items: center;
-    justify-content: center;
-     /* margin-top: 40px; */
-     align-items: flex-end;
-    justify-content: center;
-    background-position: center center; 
+  flex-direction: column;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/public/images/IMG_1516.jpg"); */
+  min-height: 35em;
+  height: auto;
+  width: auto;
+  resize: both;
+  overflow: scroll;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* background-attachment: fixed; */
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 40px; */
+  align-items: flex-end;
+  justify-content: center;
+  background-position: center center;
 
    } 
 
