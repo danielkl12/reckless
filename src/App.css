@@ -462,9 +462,9 @@ li a:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/2H7A1242.jpg");
     min-height: 35em;
     
-    size: auto;
+    size:auto;
     height: auto;
-    width: auto;
+    width: 1300px;
     resize: both;
     overflow: scroll;
     align-self: center;
