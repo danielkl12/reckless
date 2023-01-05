@@ -453,7 +453,7 @@ li a:hover {
     justify-content: center;
     background-position: center center;
     opacity: 80%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .music-mobile {
@@ -521,7 +521,19 @@ li a:hover {
     margin-left: auto;
   }
 
-  
+
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .row {
+    display: grid;
+    overflow: hidden;
+  }
 
 
 /**css graveyard**/
@@ -561,5 +573,7 @@ li a:hover {
     
 
   } */
+
+  
 
  
