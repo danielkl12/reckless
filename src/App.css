@@ -405,7 +405,7 @@ li a:hover {
   /* background-attachment: fixed; */
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   align-items: flex-end;
   justify-content: center;
   background-position: center center;
@@ -453,7 +453,7 @@ li a:hover {
     justify-content: center;
     background-position: center center;
     opacity: 80%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .music-mobile {
