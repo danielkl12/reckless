@@ -80,7 +80,7 @@ export default class Testimonials extends Component {
                         <br></br><br></br><br></br>
                         "We had Reckless play at our wedding in July 2022. They were FANTASTIC. We never for one second thought to get a DJ for the wedding and it paid off. They played on the rooftop of our venue outside for 2+ hours. We still get people telling us how much fun they had. It was a private concert for our friends and family. Honestly, I wish we could do this once per year because it was the best night of our lives. Don't think about getting a DJ or any other cover band. Reckless is simply the BEST". <br></br><br></br>- Natalia & Andrew<br></br>
                         <br></br><br></br><br></br>
-                        “We heard from so many people that Reckless was the best wedding band they had ever heard! The reception was one of our favorite parts of the day and we owe that in large part to Reckless! Thank you again!” - Grace & Trent
+                        “We heard from so many people that Reckless was the best wedding band they had ever heard! The reception was one of our favorite parts of the day and we owe that in large part to Reckless! Thank you again!” <br></br><br></br>- Grace & Trent<br></br>
                         </div>
                         <br></br>
                         <div className="center-content">
