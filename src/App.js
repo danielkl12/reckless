@@ -8,7 +8,7 @@ import Music from './pages/Music';
 import Footer from './pages/Footer';
 import Testimonials from './pages/Testimonials';
 import portfolioData from './data';
-import Photos from './pages/Photos'
+import Gallery from './pages/Gallery'
 import { Component } from 'react';
 
 
@@ -23,36 +23,7 @@ import './App.css';
 
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = { matches: window.matchMedia("(min-width: 768px)").matches };
-  // }
 
-  // componentDidMount() {
-  //   const handler = e => this.setState({matches: e.matches});
-  //   window.matchMedia("(min-width: 768px)").addEventListener('change', handler);
-  // }
-
-//   constructor(props) {
-//     super(props)
-//     this.state = {
-//     // isDesktop: false
-// };
-// this.updatePredicate = this.updatePredicate.bind(this);
-// }
-
-// componentDidMount = () => {
-//         this.updatePredicate();
-// window.addEventListener("resize", this.updatePredicate);
-//     }
-
-// componentWillUnmount() {
-//     window.removeEventListener("resize", this.updatePredicate);
-//     }
-
-// updatePredicate() {
-//     this.setState({ width: window.innerWidth, height: window.innerHeight});
-//     }
 
 constructor(props) {
   super(props)
@@ -85,7 +56,7 @@ updatePredicate() {
       <About portfolioData = {portfolioData}/>
       <Contact portfolioData = {portfolioData}/>
       <Testimonials portfolioData = {portfolioData}/>
-      <Photos portfolioData = {portfolioData}/>
+      <Gallery portfolioData = {portfolioData}/>
       <Music portfolioData = {portfolioData}/>
       <Video portfolioData = {portfolioData}/>
       <Footer portfolioData = {portfolioData}/>
@@ -97,6 +68,7 @@ updatePredicate() {
       <Contact portfolioData = {portfolioData}/>
       <Testimonials portfolioData = {portfolioData}/>
       <Music portfolioData = {portfolioData}/>
+      {/* <Gallery portfolioData = {portfolioData}/> */}
       <Video portfolioData = {portfolioData}/>
       <Footer portfolioData = {portfolioData}/>
 

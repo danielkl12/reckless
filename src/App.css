@@ -521,14 +521,13 @@ li a:hover {
     margin-left: auto;
   }
 
-  .photogrid {
-    justify-content: center;
-    margin-left: 25px;
-    margin-top:40px;
-    
+
+
+  .row {
+    display: grid;
+    overflow: hidden;
   }
 
-  
 
 
 /**css graveyard**/
@@ -568,5 +567,7 @@ li a:hover {
     
 
   } */
+
+  
 
  
