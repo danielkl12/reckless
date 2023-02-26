@@ -165,7 +165,7 @@ li a:hover {
     font-family: 'squealer';
     font-size: 80px;
     font-weight: 900; 
-    
+    color: white;
   
   }
 
@@ -501,7 +501,7 @@ li a:hover {
     background-position: center center;
   }
 
-  .navbar-mobile {
+  .mobile {
     size: large;
     height: 60px;
   }
@@ -533,6 +533,13 @@ li a:hover {
   .row {
     display: grid;
     overflow: hidden;
+  }
+
+  .gallery{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right:20px;
+    justify-content: center;
   }
 
 
