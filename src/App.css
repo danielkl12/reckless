@@ -522,11 +522,8 @@ li a:hover {
   }
 
 
-  .photo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  .photogrid {
+    
     margin-top: 40px;
   }
 
@@ -535,12 +532,8 @@ li a:hover {
     overflow: hidden;
   }
 
-  .gallery{
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right:20px;
-    justify-content: center;
-  }
+
+
 
 
 /**css graveyard**/
