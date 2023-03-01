@@ -21,7 +21,7 @@ export default class About extends Component {
         }
     
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 1200,});
+        this.setState({ isDesktop: window.innerWidth > 900,});
         }
     
     

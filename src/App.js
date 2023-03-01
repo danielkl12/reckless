@@ -8,8 +8,9 @@ import Music from './pages/Music';
 import Footer from './pages/Footer';
 import Testimonials from './pages/Testimonials';
 import portfolioData from './data';
-import Gallery from './pages/Gallery'
+import Photos from './pages/Photos'
 import { Component } from 'react';
+
 
 
 
@@ -43,7 +44,7 @@ componentWillUnmount() {
   }
 
 updatePredicate() {
-  this.setState({ isDesktop: window.innerWidth > 1200,});
+  this.setState({ isDesktop: window.innerWidth > 900,});
   }
   
   render() {
@@ -56,7 +57,8 @@ updatePredicate() {
       <About portfolioData = {portfolioData}/>
       <Contact portfolioData = {portfolioData}/>
       <Testimonials portfolioData = {portfolioData}/>
-      <Gallery portfolioData = {portfolioData}/>
+      {/* <Gallery portfolioData = {portfolioData}/> */}
+      <Photos portfolioData = {portfolioData}/>
       <Music portfolioData = {portfolioData}/>
       <Video portfolioData = {portfolioData}/>
       <Footer portfolioData = {portfolioData}/>
@@ -82,6 +84,7 @@ updatePredicate() {
 }
 
 export default App;
+
 
 <header id="home"/>
                 

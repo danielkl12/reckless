@@ -29,7 +29,7 @@ export default class Navbar extends Component {
         }
     
     updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 1200,});
+        this.setState({ isDesktop: window.innerWidth > 900,});
         }
 
         // updateWindowDimensions() {
@@ -105,7 +105,7 @@ export default class Navbar extends Component {
                                 <header className="hero" style={{size:"20px"}}>
   <div className="center-content">
     <h1 id="logo-h1">Reckless at Tiffany's</h1>
-    <h3>The Premier Minneapolis Cover band</h3>
+    <h3 style={{color:'white'}}>The Premier Minneapolis Cover band</h3>
     <a href="#event" className="book-event">Book your event today!</a>
   </div>
 </header>

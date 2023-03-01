@@ -165,7 +165,7 @@ li a:hover {
     font-family: 'squealer';
     font-size: 80px;
     font-weight: 900; 
-    
+    color: white;
   
   }
 
@@ -501,7 +501,7 @@ li a:hover {
     background-position: center center;
   }
 
-  .navbar-mobile {
+  .mobile {
     size: large;
     height: 60px;
   }
@@ -522,11 +522,8 @@ li a:hover {
   }
 
 
-  .photo-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  .photogrid {
+    
     margin-top: 40px;
   }
 
@@ -534,6 +531,9 @@ li a:hover {
     display: grid;
     overflow: hidden;
   }
+
+
+
 
 
 /**css graveyard**/

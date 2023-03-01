@@ -1,83 +1,37 @@
-import '../App.css';
-import React, { Component } from 'react';
-import dan from '../srcimages/dan.jpg'
-import mike from '../srcimages/mike.jpg'
-import danny from '../srcimages/danny.jpg'
-import joe from '../srcimages/joe.jpg'
-import mikeg from '../srcimages/mikeg.jpg'
-import crowd from '../srcimages/crowd.jpg'
-
-export default class Photos extends Component {
-
-    
-    //renders about page with profile picture, about me sections, etc
-    render() {
-        
-        return (
-            <section id="photos">
-                <div className="row">
-                    <div className="columns">
-
-                        
-                    </div>
+import "../App.css";
+import Photogrid from "react-facebook-photo-grid";
+import { Container, Row, Col } from "reactstrap";
 
 
-                    <div className="six columns main-col">
-                        <h2 style={{color: "white", fontSize:"50px", fontFamily:"squealer"}}>Photos</h2>
-                        <div style={{color:"white", marginLeft:"50px", marginRight:"50px"}}> 
-                            
-                        </div>
-                        
-        <div>  
-                <section id="card" class="cards">
-                        <article className="card">
-                        
-                            <img src={dan} alt="dan" id='dan' style={{marginRight:"30px"}}/>
-                        </article>
-                        
-                        
-                        <article className="card">
-                            <img src={mike} alt="mike" id='mike'/>
-                        </article>
+export default function App() {
+  const data = [ 'https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-098.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675622418774',
+  'https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-067.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675622420513',
+  'https://ik.imagekit.io/1fhpaowm6/mikephotogrid.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675556454471',
+  'https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-031.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357854',
+  'https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-073.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675556998056',
 
-                        <article className="card">
-                            <img src={danny} alt="danny" id='danny' style={{marginLeft:"30px"}}/>
-                        </article>
-
-                        <article className="card">
-                            <img src={joe} alt="joe" id='joe' style={{marginLeft:"30px"}}/>
-                        </article>
-
-                        <article className="card">
-                            <img src={mikeg} alt="mikeg" id='mikeg' style={{marginLeft:"30px"}}/>
-                        </article>
-                        <article className="card">
-                            <img src={crowd} alt="crowds" id='crowd' style={{marginLeft:"30px"}}/>
-                        </article>
-
-                
-                
-                </section>
-        </div>  
+]
 
 
-
-                        
-
-                        
-
-                        <div className="row">
-                            <div className="columns contact-details">
-                                          
-                                    
-                                    
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        );
-
-    }
+  return (
+    <div className="photogrid">
+      <Container>
+        <Row className="justify-content-md-center">
+          <Col md="auto">
+            <Photogrid
+              images={data} //required
+              
+            ></Photogrid>
+          </Col>
+          {/* <Col md="auto">
+            <Photogrid
+              images={data} //required
+              width={300}
+              maxWidth={600}
+            ></Photogrid>
+          </Col> */}
+        </Row>
+      </Container>
+    </div>
+  );
 }
