@@ -41,7 +41,7 @@ export default class Photos extends Component {
         
          <Imgix className='image1'
          src='https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-031.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357854'
-         sizes="(min-width: 500px) 4.8vw, 4.8vw"
+         sizes="(min-width: 500px) 1.3vw, 13.vw"
          htmlAttributes={{ // These are ignored by Imgix but passed through to the <img> element
         //  width: 200,
         //  height: 200
