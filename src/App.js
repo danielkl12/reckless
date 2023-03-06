@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Video from './pages/Video';
 import Music from './pages/Music';
 import Footer from './pages/Footer';
+import Photos from './pages/Photos';
 import Testimonials from './pages/Testimonials';
 import portfolioData from './data';
 import { Component } from 'react';
@@ -57,6 +58,7 @@ updatePredicate() {
       <Contact portfolioData = {portfolioData}/>
       <Testimonials portfolioData = {portfolioData}/>
       {/* <Gallery portfolioData = {portfolioData}/> */}
+      <Photos portfolioData = {portfolioData}/>
       <Music portfolioData = {portfolioData}/>
       <Video portfolioData = {portfolioData}/>
       <Footer portfolioData = {portfolioData}/>

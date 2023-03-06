@@ -461,7 +461,6 @@ li a:hover {
     flex-direction: column;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/images/2H7A1242.jpg");
     min-height: 35em;
-    
     size:auto;
     height: auto;
     width: 1300px;
@@ -521,8 +520,79 @@ li a:hover {
     margin-left: auto;
   }
 
+/**picturegrid**/
+
+.photogrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-115.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333351630');
+  min-height: 35em;
+  filter: brightness(200%);
+  height: 50%;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.image {
+  margin-top: 40px;
+  border-radius: 5px;
+  z-index: -20;
+  margin-right: 42px;
+  border: lightcoral 2px solid;
+}
 
 
+.image1 {
+  border-radius: 5px;
+  margin-top: -200;
+  z-index: -1;
+  margin-right: 42px;
+  border: lightcoral 2px solid;
+  
+}
+
+.image2 {
+  z-index: -1;
+  margin-right: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: -150px;
+  /* opacity: .95; */
+  filter: brightness(80%);
+  border: lightcoral 2px solid;
+}
+
+.image3 {
+  margin-top: -100px;
+  margin-right: -75px;
+  z-index: 1;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: lightcoral 2px solid;
+}
+
+.image4 {
+  margin-top: -50px;
+  z-index: auto;
+  border-radius: 5px;
+  margin-left: 21px;
+  border: lightcoral 2px solid;
+}
+
+.image5 {
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: lightcoral 2px solid;
+  z-index: -1;
+  margin-top: -50px;
+}
 
 
 /**css graveyard**/
