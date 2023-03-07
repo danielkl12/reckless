@@ -27,6 +27,7 @@ const images = [
 export default class Photos extends Component {
     render() {
         return(
+        <div id="photos">
          <div className='photogrid'>
 
         <Imgix className='image'
@@ -86,7 +87,7 @@ export default class Photos extends Component {
          
          />
         </div>     
-
+        </div>
         )
     }
 
