@@ -154,6 +154,11 @@ li a:hover {
   border: 1px solid white;
   text-decoration: none  ;
 }
+
+.book-event:hover {
+  color: rgb(201, 45, 45);
+  box-shadow: 0 30px 15px rgba(145, 92, 182, .4);
+}
   
 .hover {
     background-color: rgba(255, 255, 255, 0.1);
