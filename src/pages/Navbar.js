@@ -32,13 +32,6 @@ export default class Navbar extends Component {
         this.setState({ isDesktop: window.innerWidth > 900,});
         }
 
-        // updateWindowDimensions() {
-        //     this.setState({ width: window.innerWidth, height: window.innerHeight });
-        //   }
-    
-    
-    
-   //renders navigation bar for all other files in components folder 
     render() {
         const isDesktop = this.state.isDesktop;
        
@@ -46,23 +39,7 @@ export default class Navbar extends Component {
         let portfolioData = this.props.portfolioData;
         
         return (
-            // <React.Fragment>
-            //     <header id="home">
-            //         <nav id="nav-wrap" className="hidden-mobile">
-                        
-            //             <ul id="nav" className="nav" style= {{listStyle: 'none', }}>
-
-                
-            /* <div >
-                    {this.state.matches && (<h1>Big Screen</h1>)}
-                            
             
-                    {!this.state.matches && (<h3>Small Screen</h3>)}
-            </div> */
-            
-                   /* <nav id="nav-wrap" className="hidden-mobile"> */
-                        
-                    /* <ul id="nav" className="nav" style= {{listStyle: 'none', }}> */
         <header id="home">
                 {isDesktop ? (
                     
