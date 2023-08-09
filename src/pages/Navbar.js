@@ -1,4 +1,5 @@
 import React from 'react';
+import 'animate.css';
 
 import { Component, setState } from 'react';
 // import weddingpdf from '../info-sheet.pdf'
@@ -11,6 +12,8 @@ import '../App.css';
 
 
 export default class Navbar extends Component {
+
+    
     constructor(props) {
         super(props)
         this.state = {
@@ -104,9 +107,9 @@ export default class Navbar extends Component {
                                 {/* <div className="hero-header">Reckless at Tiffany's</div> */}
                                 <header className="hero" style={{size:"20px"}}>
   <div className="center-content">
-    <h1 id="logo-h1">Reckless at Tiffany's</h1>
-    <h3 style={{color:'white'}}>The Premier Minneapolis Cover band</h3>
-    <a href="#event" className="book-event">Book your event today!</a>
+    <h1 class="animate__animated animate__fadeIn animate__delay-.7s" id="logo-h1">Reckless at Tiffany's</h1>
+    <h3 class="animate__animated animate__fadeIn animate__delay-.7s" style={{color:'white'}}>The Premier Minneapolis Cover band</h3>
+    <div class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#event" className="book-event">Book your event today!</a></div>
   </div>
 </header>
 
