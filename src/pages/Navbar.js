@@ -84,8 +84,8 @@ export default class Navbar extends Component {
                                 {/* <div className="hero-header">Reckless at Tiffany's</div> */}
                                 <header className="hero" style={{size:"20px"}}>
   <div className="center-content">
-    <h1 class="animate__animated animate__fadeIn animate__delay-.7s" id="logo-h1">Reckless at Tiffany's</h1>
-    <h3 class="animate__animated animate__fadeIn animate__delay-.7s" style={{color:'white'}}>The Premier Minneapolis Cover band</h3>
+    <h1 class="animate__animated animate__fadeIn animate__delay-1s" id="logo-h1">Reckless at Tiffany's</h1>
+    <h3 class="animate__animated animate__fadeIn animate__delay-1s" style={{color:'white'}}>The Premier Minneapolis Cover band</h3>
     <div class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#event" className="book-event">Book your event today!</a></div>
   </div>
 </header>
