@@ -27,10 +27,10 @@ const images = [
 export default class Photos extends Component {
     render() {
         return(
-        <div id="photos">
-         <div className='photogrid'>
+        <div  id="photos">
+         <div  className='photogrid'>
 
-        <Imgix className='image'
+        <Imgix data-aos="fade-left" className='image'
          src='https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-063.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357468'
          sizes="(min-width: 500px) 1vw, 1vw"
          htmlAttributes={{ // These are ignored by Imgix but passed through to the <img> element
