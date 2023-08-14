@@ -1,45 +1,25 @@
-import React from 'react';
-import 'animate.css';
 
-import { Component, setState } from 'react';
-// import weddingpdf from '../info-sheet.pdf'
+import React, { useState, useEffect } from 'react';
+import 'animate.css';
 import '../App.css';
 
 
 
+function Navbar(props) {
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 900);
 
-
-
-
-export default class Navbar extends Component {
-
-    
-    constructor(props) {
-        super(props)
-        this.state = {
-        isDesktop: false
+    const updatePredicate = () => {
+        setIsDesktop(window.innerWidth > 900);
     };
-    this.updatePredicate = this.updatePredicate.bind(this);
-    }
 
-    componentDidMount = () => {
-            this.updatePredicate();
-    window.addEventListener("resize", this.updatePredicate);
-        }
+    useEffect(() => {
+        window.addEventListener('resize', updatePredicate);
+        return () => {
+            window.removeEventListener('resize', updatePredicate);
+        };
+    }, []);
 
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updatePredicate);
-        }
-    
-    updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 900,});
-        }
-
-    render() {
-        const isDesktop = this.state.isDesktop;
-       
-
-        let portfolioData = this.props.portfolioData;
+  
         
         return (
             
@@ -83,26 +63,14 @@ export default class Navbar extends Component {
                                 
                                 {/* <div className="hero-header">Reckless at Tiffany's</div> */}
                                 <header className="hero" style={{size:"20px"}}>
-  <div className="center-content">
-    <h1 class="animate__animated animate__fadeIn animate__delay-1s" id="logo-h1">Reckless at Tiffany's</h1>
-    <h3 class="animate__animated animate__fadeIn animate__delay-1s" style={{color:'white'}}>The Premier Minneapolis Cover band</h3>
-    <div class="animate__animated animate__fadeInUp animate__delay-1s"><a href="#event" className="book-event">Book your event today!</a></div>
+  <div data-aos='fade-in' data-aos-duration="2000" className="center-content">
+    <h1  id="logo-h1">Reckless at Tiffany's</h1>
+    <h3  style={{color:'white'}}>The Premier Minneapolis Cover band</h3>
+    <div ><a href="#event" className="book-event">Book your event today!</a></div>
   </div>
 </header>
 
-                                <ul className="links" style={{listStyle:'none'}}>
-                                    {
-                                        portfolioData.links && portfolioData.links.map(item => {
-                                        return(
-                                            <li key={item.name}>
-                                                <a href={item.url} target="_blank" rel="noreferrer"><i className={item.className}></i></a>
-                                            </li>
-                                        )
-                                        }
-                                        )
-                                    }
-
-                                </ul>
+                                
                         </div>
                     </div>
 
@@ -112,10 +80,9 @@ export default class Navbar extends Component {
                 </header>
                 
     
-        )}
-    };
+        )};
 
-
+export default Navbar;
   
                     
 

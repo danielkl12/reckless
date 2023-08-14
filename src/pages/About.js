@@ -1,120 +1,71 @@
-import '../App.css';
+import React, { useState, useEffect } from 'react';
 import 'animate.css';
-import React, { Component } from 'react';
-export default class About extends Component {
+import '../App.css';
 
-    constructor(props) {
-        super(props)
-        this.state = {
-        isDesktop: false
+const About = (props) => {
+    const [isDesktop, setIsDesktop] = useState(false);
+
+    const updatePredicate = () => {
+        setIsDesktop(window.innerWidth > 900);
     };
-    this.updatePredicate = this.updatePredicate.bind(this);
-    }
 
-    componentDidMount = () => {
-            this.updatePredicate();
-    window.addEventListener("resize", this.updatePredicate);
-        }
+    useEffect(() => {
+        updatePredicate();
+        window.addEventListener('resize', updatePredicate);
+        return () => {
+            window.removeEventListener('resize', updatePredicate);
+        };
+    }, []);
 
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updatePredicate);
-        }
-    
-    updatePredicate() {
-        this.setState({ isDesktop: window.innerWidth > 900,});
-        }
-    
-    
-    //renders about page with profile picture, about me sections, etc
-    render() {
+    // let portfolioData = props.portfolioData;
 
-
-        let portfolioData = this.props.portfolioData;
-        const isDesktop = this.state.isDesktop;
-
-        return (
-            <section id="about">
-
-                { isDesktop ? (
+    return (
+        <section id="about">
+            {isDesktop ? (
                 <div className="row">
-                    <div className="columns">
-
-                        
-                    </div>
-
+                    <div className="columns"></div>
 
                     <div className="six columns main-col">
-                        <h2 style={{color: "white", fontSize:"50px", fontFamily:"squealer"}}>About Reckless at Tiffany's</h2>
-                        <div style={{color:"white", marginLeft:"50px", marginRight:"50px"}}> 
-                            Reckless at Tiffany's is a cover band based out of Minneapolis, Minnesota. Started in 2015 at the University of 
-                            St. Thomas, Reckless at Tiffany's has gone on to play all around the Twin Cities metro area and beyond. Book your wedding or private event today!
+                        <h2 data-aos="fade-in" style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>
+                            About Reckless at Tiffany's
+                        </h2>
+                        <div data-aos-duration="2000" data-aos="fade-in" style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}>
+                            Reckless at Tiffany's is a cover band based out of Minneapolis, Minnesota. Started in 2015 at the
+                            University of St. Thomas, Reckless at Tiffany's has gone on to play all around the Twin Cities metro
+                            area and beyond. Book your wedding or private event today!
                         </div>
 
-                        <p>
-                            {
-                                portfolioData.aboutMe
-                            }
-
-                        </p>
+                        <p></p>
 
                         <div className="row">
-                            <div className="columns contact-details">
-                                
-                                    
-                                    
-                                    
-                              
-                            </div>
+                            <div className="columns contact-details"></div>
                         </div>
                     </div>
                 </div>
-                ) : (
-                    <div className="about-mobile">
+            ) : (
+                <div className="about-mobile">
                     <div className="row">
-                    <div className="columns">
+                        <div className="columns"></div>
 
-                        
-                    </div>
+                        <div className="six columns main-col">
+                            <h2 style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>
+                                About Reckless at Tiffany's
+                            </h2>
+                            <div style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}>
+                                Reckless at Tiffany's is a cover band based out of Minneapolis, Minnesota. Started in 2015 at the
+                                University of St. Thomas, Reckless at Tiffany's has gone on to play all around the Twin Cities metro
+                                area and beyond. Book your wedding or private event today!
+                            </div>
 
-
-                    <div className="six columns main-col">
-                        <h2 style={{color: "white", fontSize:"50px", fontFamily:"squealer"}}>About Reckless at Tiffany's</h2>
-                        <div style={{color:"white", marginLeft:"50px", marginRight:"50px"}}> 
-                            Reckless at Tiffany's is a cover band based out of Minneapolis, Minnesota. Started in 2015 at the University of 
-                            St. Thomas, Reckless at Tiffany's has gone on to play all around the Twin Cities metro area and beyond. Book your wedding or private event today!
-                        </div>
-
-                        <p>
-                            {
-                                portfolioData.aboutMe
-                            }
-
-                        </p>
-
-                        <div className="row">
-                            <div className="columns contact-details">
-                                
-                                    
-                                    
-                                    
-                              
+                            <div className="row">
+                                <div className="columns contact-details"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
+            )}
+        </section>
+    );
+};
 
-
-
-
-
-
-
-
-
-                    )}
-            </section>
-        );
-
-    }
-}
+export default About;
