@@ -24,7 +24,7 @@ const App = (props) => {
     useEffect(() => {
         Aos.init({duration: 650,
           once: true});
-        document.title = 'Daniel Klauer';
+        
 
         window.addEventListener('resize', updatePredicate);
         return () => {
