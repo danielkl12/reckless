@@ -27,7 +27,7 @@ const About = (props) => {
                     <div className="columns"></div>
 
                     <div  className="six columns main-col">
-                        <h2 style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>Event Information</h2>
+                        <h2 data-aos="fade-in" style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>Event Information</h2>
                         <div data-aos="fade-in" data-aos-duration="2000" style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}>
                             Whether you’re looking to electrify the dance floor at your wedding or rock out at your next
                             private/corporate event, Reckless At Tiffany’s has you covered!

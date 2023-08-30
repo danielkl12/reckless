@@ -22,7 +22,7 @@ const Testimonials = () => {
           <div className="columns"></div>
 
           <div  className="six columns main-col">
-            <h2 style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>Testimonials</h2>
+            <h2 data-aos="fade-in" style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>Testimonials</h2>
             <div data-aos="fade-in" data-aos-duration="2000" style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}>
               ”Reckless at Tiffany's performed at our Wedding Reception and we couldn't have been happier to have them! The band was incredibly accommodating and professional as we planned for the event, and put on an absolutely awesome show that night. Our guests loved their energy and everyone had a great time on the dance floor. Would highly recommend this band to anyone planning an event!”
               <br />
@@ -42,6 +42,13 @@ const Testimonials = () => {
               <br />
               <br />
               - Grace & Trent
+              <br/>
+              <br/>
+              <br/>
+              "Everyone commented how much fun and how talented the band was, and they haven’t been at a wedding that was that high of energy with that many people dancing until the end. We appreciated how flexible you guys were with mixing in karaoke, letting Danny play guitar with you and how perfect the set list was."
+              <br />
+              <br />
+              - Danny & Katie
             </div>
             <br />
             <div className="center-content"></div>
