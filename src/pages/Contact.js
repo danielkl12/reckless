@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import privateevent from './privateevent.pdf';
-import wedding from './wedding.pdf';
+import privateevent from '../privateevent.pdf';
+import wedding from '../wedding.pdf';
 
 const About = (props) => {
     const [isDesktop, setIsDesktop] = useState(false);
