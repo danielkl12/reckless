@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
-import ReactAudioPlayer from 'react-audio-player';
+
 
 
 const Music = (props) => {
