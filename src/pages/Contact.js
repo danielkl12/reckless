@@ -46,8 +46,8 @@ export default class About extends Component {
 
                         <div className="center-content">
    
-    <a href={wedding} className="book-event" target="_blank" style={{marginBottom:"10px", marginTop:"20px", backgroundColor:"black", borderRadius:"5px", opacity:"60%"}}>Wedding Info</a>
-    <a href={privateevent} className="book-event" target="_blank" style={{backgroundColor:"black", borderRadius:"5px", opacity:"60%"}}>Private Event Info</a>
+    <a href={wedding} className="book-event" target="_blank" rel="noreferrer" style={{marginBottom:"10px", marginTop:"20px", backgroundColor:"black", borderRadius:"5px", opacity:"60%"}}>Wedding Info</a>
+    <a href={privateevent} className="book-event" target="_blank" rel="noreferrer" style={{backgroundColor:"black", borderRadius:"5px", opacity:"60%"}}>Private Event Info</a>
   </div>
 
                         
@@ -87,8 +87,8 @@ export default class About extends Component {
 
                         <div className="center-content">
    
-    <a href={wedding} className="book-event" target="_blank" style={{marginBottom:"10px", marginTop:"20px", backgroundColor:"black", borderRadius:"5px", opacity:"60%"}}>Wedding Info</a>
-    <a href={privateevent} className="book-event" target="_blank" style={{backgroundColor:"black", borderRadius:"5px", opacity:"60%"}}>Private Event Info</a>
+    <a href={wedding} className="book-event" target="_blank" rel="noreferrer" style={{marginBottom:"10px", marginTop:"20px", backgroundColor:"black", borderRadius:"5px", opacity:"60%"}}>Wedding Info</a>
+    <a href={privateevent} className="book-event" target="_blank" rel="noreferrer" style={{backgroundColor:"black", borderRadius:"5px", opacity:"60%"}}>Private Event Info</a>
   </div>
 
                         
