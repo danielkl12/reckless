@@ -43,7 +43,6 @@ const App = (props) => {
       <About/>
       <Contact/>
       <Testimonials/>
-      {/* <Gallery/> */}
       <Photos/>
       <Music/>
       <Video/>
@@ -56,7 +55,7 @@ const App = (props) => {
       <Contact/>
       <Testimonials/>
       <Music/>
-      {/* <Gallery/> */}
+      {/* <Photos/> */}
       <Video/>
       <Footer/>
 
