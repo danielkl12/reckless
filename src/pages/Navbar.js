@@ -1,5 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
+import { Component } from 'react';
+// import weddingpdf from '../info-sheet.pdf'
 import '../App.css';
 
 
