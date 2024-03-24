@@ -12,6 +12,7 @@ import Music from './pages/Music';
 import Video from './pages/Video';
 import Footer from './pages/Footer';
 import Contact from './pages/Contact';
+import Calendar from './pages/Calendar';
 
 
 const App = (props) => {
@@ -42,6 +43,7 @@ const App = (props) => {
       <Navbar/>
       <About/>
       <Contact/>
+      <Calendar/>
       <Testimonials/>
       <Photos/>
       <Music/>

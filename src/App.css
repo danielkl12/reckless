@@ -604,45 +604,95 @@ li a:hover {
   margin-top: -50px;
 }
 
-
-/**css graveyard**/
-/* .card:hover,
-.card:hover .card {
-    box-shadow: inset 0px 0px 8px red, 0 0 15px red;
-    
-    opacity: 1.0;
-    
-  } */
-
-  /* #reckless-video {
-  justify-content:space-around;
+/**Calendar**/
+.calendar-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/Users/danielklauer/Desktop/Repositories/Reckless Website/reckless/public/images/72712060780__BB48E341-CEAE-4207-93A4-46D466843E40.jpeg");
+  min-height: 35em;
+  filter: brightness(150%);
+  height: 50%;
   align-self: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   align-items: center;
- 
+  justify-content: center;
+  margin-top: 40px;
+  /* max-width: 480px; */
+  font: 135% squealer;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 80%;
   
-    
-} */
+}
 
-/* @font-face {
-    font-family: '';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Squealer'), local('Squealer'), url(https://fonts.cdnfonts.com/css/squealer) ;
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    } */
-  
-  
-   /* .player-wrapper {
-    position: relative;
-    
+.calendar-buttons {
+  background: transparent;
+  border: none !important;
+}
 
-  } */
+.day-style {
+  color: rgb(199, 18, 18);
+}
 
-  
+.first-day {
+  grid-column-start: 3;
+}
 
- 
+.calendar-h1 {
+  margin-bottom: 5%;
+}
+
+
+.day-name {
+  color: #eee;
+}
+
+h1 {
+  text-align: center;
+}
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+  padding: 2px;
+}
+
+.calendar-color {
+  color: black;
+  background-color: rgb(199, 18, 18);
+}
+
+
+
+/** MODAL **/
+
+/* styles.css */
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px; /* Adjust width as needed */
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
