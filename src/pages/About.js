@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import 'animate.css';
 import '../App.css';
 
 const About = (props) => {
