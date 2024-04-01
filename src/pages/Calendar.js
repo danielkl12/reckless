@@ -15,9 +15,10 @@ const CustomModal = ({ isOpen, onRequestClose, selectedDay, dayDetails }) => {
         <Modal isOpen={isOpen} onRequestClose={onRequestClose} style={modalStyles}>
             <h2 className="modal-day-title">Gig Details</h2>
             <p>{details.description}</p>
+            <p>{details.description2}</p>
             {details.url && <a href={details.url}>More Info</a>}
             {details.photo && <img src={details.photo} alt="Day Photo" />}
-            <button onClick={onRequestClose}>Close</button>
+            {/* <button onClick={onRequestClose}>Close</button> */}
         </Modal>
     );
 };
@@ -54,10 +55,10 @@ const Calendar = (props) => {
             photo: "day2.jpg"
         },
         3: {
-            description: "Details for Day 2",
-            url: "https://example.com/day2",
-            photo: "day2.jpg"
-        
+            description: "Mainstreet Bar and Grill ",
+            description2: "Please join us for a night of classic rock with our friends at Mainstreet Bar and Grill!",
+            url: "https://mainstreetbar.com/",
+            // photo: "day2.jpg"
         },
         4: {
             description: "Details for Day 2",
