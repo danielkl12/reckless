@@ -608,7 +608,7 @@ li a:hover {
 .calendar-wrapper {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/Users/danielklauer/Desktop/Repositories/Reckless Website/reckless/public/images/72712060780__BB48E341-CEAE-4207-93A4-46D466843E40.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/Users/danielklauer/Desktop/Repositories/Reckless Website/reckless/public/images/RAT 3_22 Crem de la crem-029.jpg");
   min-height: 35em;
   filter: brightness(150%);
   height: 50%;
@@ -632,6 +632,12 @@ li a:hover {
 .calendar-buttons {
   background: transparent;
   border: none !important;
+  color: black;
+  background-color: rgb(199, 18, 18);
+  border: 5px;
+  border-radius: 5px;
+  height:100%;
+  width:80%;
 }
 
 .day-style {
@@ -664,9 +670,24 @@ li {
   padding: 2px;
 }
 
-.calendar-color {
+/* .calendar-color {
   color: black;
   background-color: rgb(199, 18, 18);
+  border: 5px;
+  border-radius: 5px;
+  height:100%;
+  width:80%;
+} */
+
+.calendar-buttons:hover {
+  background-color: white;
+}
+
+
+.calendar-buttons.with-bullet::after {
+  content: '\2605'; 
+  margin-left: 5px; 
+  color: black;
 }
 
 
@@ -678,7 +699,7 @@ li {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
+/* .modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -687,8 +708,8 @@ li {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    max-width: 500px; /* Adjust width as needed */
-}
+    
+} */
 
 .modal-close {
     position: absolute;
