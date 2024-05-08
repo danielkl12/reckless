@@ -47,12 +47,12 @@ const Calendar = (props) => {
         1: {
             description: "Details for Day 1",
             url: "https://example.com/day1",
-            photo: "day1.jpg"
+            // photo: "day1.jpg"
         },
         2: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         3: {
             description: "Mainstreet Bar and Grill ",
@@ -63,143 +63,143 @@ const Calendar = (props) => {
         4: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         5: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         6: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         7: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         8: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         9: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         10: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         11: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         12: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         13: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         14: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         15: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         16: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         17: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         18: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         19: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         20: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         21: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         22: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         23: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         24: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         }, 
         25: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         26: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         27: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         28: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         29: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         30: {
             description: "Details for Day 2",
             url: "https://example.com/day2",
-            photo: "day2.jpg"
+            // photo: "day2.jpg"
         },
         
         31: {
             description: "Details for Day 31",
             url: "https://example.com/day31",
-            photo: "day31.jpg"
+            // photo: "day31.jpg"
         }
     });
 
@@ -233,7 +233,7 @@ const Calendar = (props) => {
                     {[...Array(31).keys()].map((day) => (
                         <li key={day} className="day-style">
                             {dayDetails[day + 1] && ( // Check if details exist for the day
-                                <button onClick={() => openCalendarModal(day + 1)}  className={`calendar-buttons ${day + 1 === 3 || day + 1 === 12 ? 'with-bullet' : ''}`}>
+                                <button onClick={() => openCalendarModal(day + 1)}  className={`calendar-buttons ${day + 1 === 3 || day + 1 === 12 || day +1 === 15 ? 'with-bullet' : ''}`}>
                                     {day + 1}
                                 </button>
                             )}
