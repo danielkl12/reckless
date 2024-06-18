@@ -19,6 +19,7 @@
     "animate": "^1.0.0",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
+    "flexboxgrid": "^6.3.1",
     "install": "^0.13.0",
     "npm": "^9.9.3",
     "react": "^18.2.0",

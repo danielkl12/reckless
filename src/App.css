@@ -233,6 +233,38 @@ li a:hover {
   margin-top: 40px;
   }
 
+  .flex-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col {
+    display: flex;
+    flex: 1;
+    color: white;
+    margin-right: 400px; /* Adjust the value as needed */
+    margin-bottom:60px
+  }
+
+  .col:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+  #calendar {
+    display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../public/images/IMG_0305\ 2.jpg");
+  min-height: 35em;
+  filter: brightness(200%);
+  height: 50%;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  }
+
   #nav {
     font-family: 'squealer';
     font-size: 30px;
