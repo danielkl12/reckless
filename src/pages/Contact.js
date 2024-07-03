@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import '../App.css';
 import privateevent from '../privateevent.pdf';
 import wedding from '../wedding.pdf';
@@ -18,15 +19,17 @@ const About = (props) => {
         };
     }, []);
 
-    // let portfolioData = props.portfolioData;
-
     return (
         <section id="event">
+            <Helmet>
+                <title>Event Information - Reckless at Tiffany's</title>
+                <meta name="description" content="Learn about Reckless at Tiffany's event information. Whether you’re looking to electrify the dance floor at your wedding or rock out at your next private or corporate event, Reckless At Tiffany’s has you covered!" />
+            </Helmet>
             {isDesktop ? (
                 <div className="row">
                     <div className="columns"></div>
 
-                    <div  className="six columns main-col">
+                    <div className="six columns main-col">
                         <h2 data-aos="fade-in" style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>Event Information</h2>
                         <div data-aos="fade-in" data-aos-duration="2000" style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}>
                             Whether you’re looking to electrify the dance floor at your wedding or rock out at your next

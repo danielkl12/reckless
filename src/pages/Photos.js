@@ -1,6 +1,7 @@
 import '../App.css';
-import React, { Component } from 'react';
-import Imgix, { Picture, Source } from "react-imgix";
+import React from 'react';
+import Imgix from "react-imgix";
+import { Helmet } from 'react-helmet';
 
 const images = [
     'https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-073.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675556998056',
@@ -21,75 +22,76 @@ const images = [
     'https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-111.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357755',
     'https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-031.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357854',
     'https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-085.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333358557'
+];
 
-]
+const Photos = () => {
+    return (
+        <div id="photos">
+            <Helmet>
+                <title>Reckless at Tiffany's | Photos</title>
+                <meta name="description" content="Check out the latest photos of Reckless at Tiffany's, the premier Minneapolis cover band." />
+            </Helmet>
+            <div className='photogrid'>
+                <Imgix
+                    data-aos="fade-left"
+                    className='image'
+                    src='https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-063.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357468'
+                    sizes="(min-width: 500px) 1vw, 1vw"
+                    htmlAttributes={{
+                        //  width: 200,
+                        //  height: 200
+                    }}
+                />
 
-export default class Photos extends Component {
-    render() {
-        return(
-        <div  id="photos">
-         <div  className='photogrid'>
+                <Imgix
+                    className='image1'
+                    src='https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-031.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357854'
+                    sizes="(min-width: 500px) 1.3vw, 1.3vw"
+                    htmlAttributes={{
+                        //  width: 200,
+                        //  height: 200
+                    }}
+                />
 
-        <Imgix data-aos="fade-left" className='image'
-         src='https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-063.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357468'
-         sizes="(min-width: 500px) 1vw, 1vw"
-         htmlAttributes={{ // These are ignored by Imgix but passed through to the <img> element
-        //  width: 200,
-        //  height: 200
-         }}
-         
-         />
-        
-         <Imgix className='image1'
-         src='https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-031.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333357854'
-         sizes="(min-width: 500px) 1.3vw, 13.vw"
-         htmlAttributes={{ // These are ignored by Imgix but passed through to the <img> element
-        //  width: 200,
-        //  height: 200
-         }}
-         
-         />
-
-        <Imgix className='image2'
-         src='https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-085.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333358557'
-         sizes="(min-width: 500px) 1vw, 1vw"
-         htmlAttributes={{ // These are ignored by Imgix but passed through to the <img> element
-        //  width: 200,
-        //  height: 200
-         }}
-         
-         />
-         <Imgix className='image3'
-         src= 'https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-041.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675556835403'
-         sizes="(min-width: 500px) 1.3vw, 1.3vw"
-         htmlAttributes={{ // These are ignored by Imgix but passed through to the <img> element
-        //  width: 200,
-        //  height: 200
-         }}
-         
-         />
-         <Imgix className='image4'
-         src= 'https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-073.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675556998056'
-         sizes="(min-width: 500px) 1vw, 1vw"
-         htmlAttributes={{ // These are ignored by Imgix but passed through to the <img> element
-        //  width: 200,
-        //  height: 200
-         }}
-         
-         />
-         <Imgix className='image5'
-         src= 'https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-067.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675622420513'
-         sizes="(min-width: 500px) 1vw, 1vw"
-         htmlAttributes={{ // These are ignored by Imgix but passed through to the <img> element
-        //  width: 200,
-        //  height: 200
-         }}
-         
-         />
-        </div>     
+                <Imgix
+                    className='image2'
+                    src='https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-085.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676333358557'
+                    sizes="(min-width: 500px) 1vw, 1vw"
+                    htmlAttributes={{
+                        //  width: 200,
+                        //  height: 200
+                    }}
+                />
+                <Imgix
+                    className='image3'
+                    src='https://ik.imagekit.io/1fhpaowm6/RAT_4-30-22-041.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675556835403'
+                    sizes="(min-width: 500px) 1.3vw, 1.3vw"
+                    htmlAttributes={{
+                        //  width: 200,
+                        //  height: 200
+                    }}
+                />
+                <Imgix
+                    className='image4'
+                    src='https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-073.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675556998056'
+                    sizes="(min-width: 500px) 1vw, 1vw"
+                    htmlAttributes={{
+                        //  width: 200,
+                        //  height: 200
+                    }}
+                />
+                <Imgix
+                    className='image5'
+                    src='https://ik.imagekit.io/1fhpaowm6/RAT_3_22_Crem_de_la_crem-067.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675622420513'
+                    sizes="(min-width: 500px) 1vw, 1vw"
+                    htmlAttributes={{
+                        //  width: 200,
+                        //  height: 200
+                    }}
+                />
+            </div>
         </div>
-        )
-    }
+    );
+};
 
-}
-
+export default Photos;

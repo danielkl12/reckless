@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
+import { Helmet } from 'react-helmet';
 
 const Music = (props) => {
     const [isDesktop, setIsDesktop] = useState(false);
@@ -20,6 +21,10 @@ const Music = (props) => {
 
     return (
         <section id="music">
+            <Helmet>
+                <title>Music | Reckless at Tiffany's</title>
+                <meta name="description" content="Listen to the music of Reckless at Tiffany's. Check out our SoundCloud for more tracks." />
+            </Helmet>
             {isDesktop ? (
                 <div className="row">
                     <div className="columns">
@@ -29,7 +34,8 @@ const Music = (props) => {
                         </div>
                     </div>
 
-                    <ReactPlayer data-aos='fade-left'
+                    <ReactPlayer
+                        data-aos='fade-left'
                         style={{ opacity: '20px' }}
                         url="https://soundcloud.com/user-561841802"
                     />

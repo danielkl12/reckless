@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import 'animate.css';
 import '../App.css';
 
@@ -17,10 +18,12 @@ const About = (props) => {
         };
     }, []);
 
-    // let portfolioData = props.portfolioData;
-
     return (
         <section id="about">
+            <Helmet>
+                <title>About Reckless at Tiffany's</title>
+                <meta name="description" content="Learn about Reckless at Tiffany's, a cover band based out of Minneapolis, Minnesota. Started in 2015, the band has played all around the Twin Cities metro area and beyond." />
+            </Helmet>
             {isDesktop ? (
                 <div className="row">
                     <div className="columns"></div>

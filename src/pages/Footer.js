@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/6c800840-27b4-11ed-9d54-c9f9d2b00e7b"; 
 
@@ -20,11 +21,14 @@ const Footer = () => {
   }
 
   return (
-    <div  id="footer">
+    <div id="footer">
+      <Helmet>
+        <title>Contact Reckless at Tiffany's</title>
+        <meta name="description" content="Contact Reckless at Tiffany's for your next event. Fill out the form to send us a message and we'll be in touch soon." />
+      </Helmet>
       <div className="six columns main-col">
-        <h2 style={{color: "white", fontSize:"50px", fontFamily:"squealer"}}>Contact</h2>
-        <div style={{color:"white", marginLeft:"50px", marginRight:"50px"}}> 
-        </div>
+        <h2 style={{ color: "white", fontSize: "50px", fontFamily: "squealer" }}>Contact</h2>
+        <div style={{ color: "white", marginLeft: "50px", marginRight: "50px" }}></div>
       </div>
 
       <form data-aos="fade-in" data-aos-duration="2000"
@@ -33,8 +37,8 @@ const Footer = () => {
         method="POST"
         target="_blank"
       >
-        <div className="mb-3 pt-0" style={{height:"50px"}}> 
-          <input id="inputID" style={{width:"170px"}}
+        <div className="mb-3 pt-0" style={{ height: "50px" }}>
+          <input id="inputID" style={{ width: "170px" }}
             type="text"
             placeholder="Your name"
             name="name"
@@ -42,8 +46,8 @@ const Footer = () => {
             required
           />
         </div>
-        <div className="mb-3 pt-0" style={{height:"50px"}}>
-          <input id="inputID"  style={{width:"170px"}}
+        <div className="mb-3 pt-0" style={{ height: "50px" }}>
+          <input id="inputID" style={{ width: "170px" }}
             type="email"
             placeholder="Email"
             name="email"
@@ -52,7 +56,7 @@ const Footer = () => {
           />
         </div>
         <div className="mb-3 pt-0">
-          <textarea id="inputID"  style={{width:"370px", height:"200px"}}
+          <textarea id="inputID" style={{ width: "370px", height: "200px" }}
             placeholder="Your message"
             name="message"
             className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
@@ -60,7 +64,7 @@ const Footer = () => {
           />
         </div>
         <div className="mb-3 pt-0">
-          <button 
+          <button
             className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
             type="submit"
           >
