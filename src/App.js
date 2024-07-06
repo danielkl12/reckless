@@ -39,99 +39,135 @@ const App = (props) => {
                 </Helmet>
 
                 <Routes>
-                    <Route exact path="/">
-                        <Helmet>
-                            <title>Home | Reckless at Tiffany's</title>
-                            <meta name="description" content="Welcome to Reckless at Tiffany's, the premier Minneapolis cover band. Book your event today!" />
-                            <link rel="canonical" href="http://www.recklessattiffanys.com" />
-                        </Helmet>
-                        <div className={isDesktop ? "App" : "mobile"}>
-                            <Navbar />
-                            <About />
-                            <Contact />
-                            <Testimonials />
-                            <Photos />
-                            <Music />
-                            <Video />
-                            <Footer />
-                        </div>
-                    </Route>
+                    <Route
+                        exact
+                        path="/"
+                        element={
+                            <>
+                                <Helmet>
+                                    <title>Home | Reckless at Tiffany's</title>
+                                    <meta name="description" content="Welcome to Reckless at Tiffany's, the premier Minneapolis cover band. Book your event today!" />
+                                    <link rel="canonical" href="http://www.recklessattiffanys.com" />
+                                </Helmet>
+                                <div className={isDesktop ? "App" : "mobile"}>
+                                    <Navbar />
+                                    <About />
+                                    <Contact />
+                                    <Testimonials />
+                                    <Photos />
+                                    <Music />
+                                    <Video />
+                                    <Footer />
+                                </div>
+                            </>
+                        }
+                    />
                     {/* Add routes for other sections */}
-                    <Route path="/about">
-                        <Helmet>
-                            <title>About | Reckless at Tiffany's</title>
-                            <meta name="description" content="Learn more about Reckless at Tiffany's, the premier Minneapolis cover band." />
-                            <link rel="canonical" href="http://www.recklessattiffanys.com" />
-                        </Helmet>
-                        <div className={isDesktop ? "App" : "mobile"}>
-                            <Navbar />
-                            <About />
-                            <Footer />
-                        </div>
-                    </Route>
-                    <Route path="/testimonials">
-                        <Helmet>
-                            <title>Testimonials | Reckless at Tiffany's</title>
-                            <meta name="description" content="Read testimonials about Reckless at Tiffany's from satisfied clients." />
-                            <link rel="canonical" href="http://www.recklessattiffanys.com" />
-                        </Helmet>
-                        <div className={isDesktop ? "App" : "mobile"}>
-                            <Navbar />
-                            <Testimonials />
-                            <Footer />
-                        </div>
-                    </Route>
-                    <Route path="/photos">
-                        <Helmet>
-                            <title>Photos | Reckless at Tiffany's</title>
-                            <meta name="description" content="View photos of Reckless at Tiffany's performances." />
-                            <link rel="canonical" href="http://www.recklessattiffanys.com" />
-                        </Helmet>
-                        <div className={isDesktop ? "App" : "mobile"}>
-                            <Navbar />
-                            <Photos />
-                            <Footer />
-                        </div>
-                    </Route>
-                    <Route path="/music">
-                        <Helmet>
-                            <title>Music | Reckless at Tiffany's</title>
-                            <meta name="description" content="Listen to music by Reckless at Tiffany's." />
-                            <link rel="canonical" href="http://www.recklessattiffanys.com" />
-                        </Helmet>
-                        <div className={isDesktop ? "App" : "mobile"}>
-                            <Navbar />
-                            <Music />
-                            <Footer />
-                        </div>
-                    </Route>
-                    <Route path="/video">
-                        <Helmet>
-                            <title>Videos | Reckless at Tiffany's</title>
-                            <meta name="description" content="Watch videos of Reckless at Tiffany's performances." />
-                            <link rel="canonical" href="http://www.recklessattiffanys.com" />
-                        </Helmet>
-                        <div className={isDesktop ? "App" : "mobile"}>
-                            <Navbar />
-                            <Video />
-                            <Footer />
-                        </div>
-                    </Route>
-                    <Route path="/contact">
-                        <Helmet>
-                            <title>Contact | Reckless at Tiffany's</title>
-                            <meta name="description" content="Contact Reckless at Tiffany's for bookings and inquiries." />
-                            <link rel="canonical" href="http://www.recklessattiffanys.com" />
-                        </Helmet>
-                        <div className={isDesktop ? "App" : "mobile"}>
-                            <Navbar />
-                            <Contact />
-                            <Footer />
-                        </div>
-                    </Route>
+                    <Route
+                        path="/about"
+                        element={
+                            <>
+                                <Helmet>
+                                    <title>About | Reckless at Tiffany's</title>
+                                    <meta name="description" content="Learn more about Reckless at Tiffany's, the premier Minneapolis cover band." />
+                                    <link rel="canonical" href="http://www.recklessattiffanys.com/about" />
+                                </Helmet>
+                                <div className={isDesktop ? "App" : "mobile"}>
+                                    <Navbar />
+                                    <About />
+                                    <Footer />
+                                </div>
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/testimonials"
+                        element={
+                            <>
+                                <Helmet>
+                                    <title>Testimonials | Reckless at Tiffany's</title>
+                                    <meta name="description" content="Read testimonials about Reckless at Tiffany's from satisfied clients." />
+                                    <link rel="canonical" href="http://www.recklessattiffanys.com/testimonials" />
+                                </Helmet>
+                                <div className={isDesktop ? "App" : "mobile"}>
+                                    <Navbar />
+                                    <Testimonials />
+                                    <Footer />
+                                </div>
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/photos"
+                        element={
+                            <>
+                                <Helmet>
+                                    <title>Photos | Reckless at Tiffany's</title>
+                                    <meta name="description" content="View photos of Reckless at Tiffany's performances." />
+                                    <link rel="canonical" href="http://www.recklessattiffanys.com/photos" />
+                                </Helmet>
+                                <div className={isDesktop ? "App" : "mobile"}>
+                                    <Navbar />
+                                    <Photos />
+                                    <Footer />
+                                </div>
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/music"
+                        element={
+                            <>
+                                <Helmet>
+                                    <title>Music | Reckless at Tiffany's</title>
+                                    <meta name="description" content="Listen to music by Reckless at Tiffany's." />
+                                    <link rel="canonical" href="http://www.recklessattiffanys.com/music" />
+                                </Helmet>
+                                <div className={isDesktop ? "App" : "mobile"}>
+                                    <Navbar />
+                                    <Music />
+                                    <Footer />
+                                </div>
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/video"
+                        element={
+                            <>
+                                <Helmet>
+                                    <title>Videos | Reckless at Tiffany's</title>
+                                    <meta name="description" content="Watch videos of Reckless at Tiffany's performances." />
+                                    <link rel="canonical" href="http://www.recklessattiffanys.com/video" />
+                                </Helmet>
+                                <div className={isDesktop ? "App" : "mobile"}>
+                                    <Navbar />
+                                    <Video />
+                                    <Footer />
+                                </div>
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/contact"
+                        element={
+                            <>
+                                <Helmet>
+                                    <title>Contact | Reckless at Tiffany's</title>
+                                    <meta name="description" content="Contact Reckless at Tiffany's for bookings and inquiries." />
+                                    <link rel="canonical" href="http://www.recklessattiffanys.com/contact" />
+                                </Helmet>
+                                <div className={isDesktop ? "App" : "mobile"}>
+                                    <Navbar />
+                                    <Contact />
+                                    <Footer />
+                                </div>
+                            </>
+                        }
+                    />
                 </Routes>
             </div>
-            </Router>
+        </Router>
     );
 }
 
