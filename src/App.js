@@ -134,7 +134,7 @@ const App = () => {
                                     <meta name="description" content="View photos of Reckless at Tiffany's performances." />
                                     <link rel="canonical" href="http://www.recklessattiffanys.com/photos" />
                                 </Helmet>
-                                <div className={isDesktop ? "App" : "mobile"}>
+                                <div className="App"> {/* Always use 'App' class */}
                                     <Navbar />
                                     <Photos />
                                     <Footer />
