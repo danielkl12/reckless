@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import { Helmet } from 'react-helmet';
 
-const Music = (props) => {
+const Music = () => {
     const [isDesktop, setIsDesktop] = useState(false);
 
     const updatePredicate = () => {
@@ -17,8 +17,6 @@ const Music = (props) => {
         };
     }, []);
 
-    // let portfolioData = props.portfolioData;
-
     return (
         <section id="music">
             <Helmet>
@@ -30,7 +28,9 @@ const Music = (props) => {
                     <div className="columns">
                         <div className="six columns main-col">
                             <h2 style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>Music</h2>
-                            <div style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}></div>
+                            <div style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}>
+                                Listen to the music of Reckless at Tiffany's. Check out our SoundCloud for more tracks.
+                            </div>
                         </div>
                     </div>
 
@@ -38,6 +38,7 @@ const Music = (props) => {
                         data-aos='fade-left'
                         style={{ opacity: '20px' }}
                         url="https://soundcloud.com/user-561841802"
+                        width="100%"
                     />
 
                     <div className="row">
@@ -50,7 +51,9 @@ const Music = (props) => {
                         <div className="columns">
                             <div className="six columns main-col">
                                 <h2 style={{ color: 'white', fontSize: '50px', fontFamily: 'squealer' }}>Music</h2>
-                                <div style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}></div>
+                                <div style={{ color: 'white', marginLeft: '50px', marginRight: '50px' }}>
+                                    Listen to the music of Reckless at Tiffany's. Check out our SoundCloud for more tracks.
+                                </div>
                             </div>
                         </div>
 

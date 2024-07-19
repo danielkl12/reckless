@@ -22,6 +22,12 @@ function Navbar(props) {
             <Helmet>
                 <title>Reckless at Tiffany's | Home</title>
                 <meta name="description" content="Reckless at Tiffany's - The Premier Minneapolis Cover Band. Book your event today!" />
+                <link rel="canonical" href="http://www.recklessattiffanys.com/" />
+                <meta property="og:title" content="Reckless at Tiffany's | Home" />
+                <meta property="og:description" content="Reckless at Tiffany's - The Premier Minneapolis Cover Band. Book your event today!" />
+                <meta property="og:url" content="http://www.recklessattiffanys.com/" />
+                <meta property="og:image" content="http://www.recklessattiffanys.com/image.jpg" />
+                <meta property="og:type" content="website" />
             </Helmet>
             {isDesktop ? (
                 <div>
@@ -42,7 +48,7 @@ function Navbar(props) {
                         <ul id="nav" className="nav" style={{ listStyle: 'none' }}>
                             <li style={{ fontSize: "20px" }}><a href="#about">About</a></li>
                             <li style={{ fontSize: "20px" }}><a href="#footer">Contact</a></li>
-                            {/* <li style={{ fontSize: "14px" }}><a href="#photos">Photos</a></li> */}
+                            <li style={{ fontSize: "20px" }}><a href="#photos">Photos</a></li>
                             <li style={{ fontSize: "20px" }}><a href="#music">Music</a></li>
                             <li style={{ fontSize: "20px" }}><a href="#video">Video</a></li>
                             <li style={{ fontSize: "20px" }}><a href="#event">Events</a></li>
@@ -52,10 +58,10 @@ function Navbar(props) {
             )}
             <div className="row banner">
                 <div className="banner-text">
-                    <header className="hero" style={{ size: "20px" }}>
+                    <header className="hero" style={{ fontSize: "20px" }}>
                         <div data-aos='fade-in' data-aos-duration="2000" className="center-content">
                             <h1 id="logo-h1">Reckless at Tiffany's</h1>
-                            <h3 style={{ color: 'white' }}>The Premier Minneapolis Cover band</h3>
+                            <h3 style={{ color: 'white' }}>The Premier Minneapolis Cover Band</h3>
                             <div><a href="#event" className="book-event">Book your event today!</a></div>
                         </div>
                     </header>

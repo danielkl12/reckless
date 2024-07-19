@@ -5,6 +5,7 @@ const FORM_ENDPOINT = "https://public.herotofu.com/v1/6c800840-27b4-11ed-9d54-c9
 
 const Footer = () => {
   const [submitted, setSubmitted] = useState(false);
+
   const handleSubmit = () => {
     setTimeout(() => {
       setSubmitted(true);
@@ -13,10 +14,14 @@ const Footer = () => {
 
   if (submitted) {
     return (
-      <>
+      <div id="footer">
+        <Helmet>
+          <title>Thank You - Reckless at Tiffany's</title>
+          <meta name="description" content="Thank you for contacting Reckless at Tiffany's. We'll be in touch soon." />
+        </Helmet>
         <div className="text-2xl">Thank you!</div>
         <div className="text-md">We'll be in touch soon.</div>
-      </>
+      </div>
     );
   }
 
@@ -28,38 +33,47 @@ const Footer = () => {
       </Helmet>
       <div className="six columns main-col">
         <h2 style={{ color: "white", fontSize: "50px", fontFamily: "squealer" }}>Contact</h2>
-        <div style={{ color: "white", marginLeft: "50px", marginRight: "50px" }}></div>
+        <div style={{ color: "white", marginLeft: "50px", marginRight: "50px" }}>
+          Contact Reckless at Tiffany's for your next event. Fill out the form below to send us a message and we'll be in touch soon.
+        </div>
       </div>
-
-      <form data-aos="fade-in" data-aos-duration="2000"
+      <form
+        data-aos="fade-in"
+        data-aos-duration="2000"
         action={FORM_ENDPOINT}
         onSubmit={handleSubmit}
         method="POST"
         target="_blank"
       >
         <div className="mb-3 pt-0" style={{ height: "50px" }}>
-          <input id="inputID" style={{ width: "170px" }}
+          <input
+            id="inputID"
+            style={{ width: "170px" }}
             type="text"
             placeholder="Your name"
             name="name"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
             required
           />
         </div>
         <div className="mb-3 pt-0" style={{ height: "50px" }}>
-          <input id="inputID" style={{ width: "170px" }}
+          <input
+            id="inputID"
+            style={{ width: "170px" }}
             type="email"
             placeholder="Email"
             name="email"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
             required
           />
         </div>
         <div className="mb-3 pt-0">
-          <textarea id="inputID" style={{ width: "370px", height: "200px" }}
+          <textarea
+            id="inputID"
+            style={{ width: "370px", height: "200px" }}
             placeholder="Your message"
             name="message"
-            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
+            className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
             required
           />
         </div>

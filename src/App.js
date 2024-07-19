@@ -14,7 +14,7 @@ import Footer from './pages/Footer';
 import Contact from './pages/Contact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-const App = (props) => {
+const App = () => {
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 900);
 
     const updatePredicate = () => {
@@ -33,9 +33,37 @@ const App = (props) => {
         <Router>
             <div>
                 <Helmet>
-                    <title>Reckless at Tiffany's</title>
+                    <title>Reckless at Tiffany's - Minneapolis Cover Band</title>
                     <meta name="description" content="Reckless at Tiffany's - The premier Minneapolis cover band. Book your event today!" />
                     <link rel="canonical" href="http://www.recklessattiffanys.com" />
+                    <meta property="og:title" content="Reckless at Tiffany's - Minneapolis Cover Band" />
+                    <meta property="og:description" content="Reckless at Tiffany's - The premier Minneapolis cover band. Book your event today!" />
+                    <meta property="og:url" content="http://www.recklessattiffanys.com" />
+                    <meta property="og:image" content="http://www.recklessattiffanys.com/image.jpg" />
+                    <meta property="og:type" content="website" />
+                    <script type="application/ld+json">
+                        {`
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "MusicGroup",
+                                "name": "Reckless at Tiffany's",
+                                "url": "http://www.recklessattiffanys.com",
+                                "sameAs": [
+                                    "https://www.facebook.com/recklessattiffanys",
+                                    "https://www.instagram.com/recklessattiffanys"
+                                ],
+                                "image": "http://www.recklessattiffanys.com/image.jpg",
+                                "description": "The premier cover band in Minneapolis. Book us for your next event!",
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "addressLocality": "Minneapolis",
+                                    "addressRegion": "MN",
+                                    "postalCode": "55401",
+                                    "addressCountry": "US"
+                                }
+                            }
+                        `}
+                    </script>
                 </Helmet>
 
                 <Routes>

@@ -604,6 +604,29 @@ li a:hover {
   margin-top: -50px;
 }
 
+.image {
+  border: 2px solid #fff; /* White border */
+  border-radius: 5px; /* Optional: Rounded corners */
+  margin: 10px; /* Space between images */
+}
+
+.photogrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the grid */
+  gap: 10px; /* Space between images */
+}
+
+/* Additional styles for responsiveness or specific images */
+.image0 {
+  margin-top: 40px;
+  border-radius: 5px;
+  z-index: -20;
+  margin-right: 42px;
+  border: lightcoral 2px solid;
+}
+
+
 
 /**css graveyard**/
 /* .card:hover,

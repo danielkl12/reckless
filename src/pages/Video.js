@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import '../App.css';
 
 const Video = () => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 900);
@@ -47,6 +49,16 @@ const Video = () => {
 
   return (
     <section id="video">
+      <Helmet>
+        <title>Reckless at Tiffany's | Videos</title>
+        <meta name="description" content="Watch the latest videos of Reckless at Tiffany's, the premier Minneapolis cover band." />
+        <link rel="canonical" href="http://www.recklessattiffanys.com/videos" />
+        <meta property="og:title" content="Reckless at Tiffany's | Videos" />
+        <meta property="og:description" content="Watch the latest videos of Reckless at Tiffany's, the premier Minneapolis cover band." />
+        <meta property="og:url" content="http://www.recklessattiffanys.com/videos" />
+        <meta property="og:image" content="http://www.recklessattiffanys.com/og-image.jpg" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {isDesktop ? (
         <div className="row">
           <div className="columns"></div>
